@@ -1,0 +1,48 @@
+station_id,station_name,total_passengers,daily_avg_passengers,avg_passengers_per_hour,peak_passengers,avg_delay_min,avg_occupancy,anomaly_count,latitude,longitude,zone,type,is_interchange
+ST_DEL_AER_45,Delhi Aerocity,204800,14629,770,1740,2.0,0.183,0,28.5492,77.1215,South West,Underground,False
+ST_DEL_AIM_11,AIIMS,746448,53318,2806,6075,3.55,0.247,0,28.5684,77.2078,South Delhi,Underground,False
+ST_DEL_AKS_24,Akshardham,600279,42877,2257,5230,3.04,0.244,0,28.6179,77.2795,East Delhi,Elevated,False
+ST_DEL_BAD_42,Badarpur Border,205854,14704,774,1917,1.93,0.184,0,28.4947,77.3005,South Delhi,Elevated,False
+ST_DEL_BOT_27,Botanical Garden,793574,56684,2983,6403,3.6,0.245,1,28.5641,77.3343,Noida,Elevated,True
+ST_DEL_CHA_06,Chandni Chowk,769565,54969,2893,6299,3.55,0.246,0,28.6578,77.2302,Old Delhi,Underground,False
+ST_DEL_DEL_37,Delhi Gate,204577,14613,769,1821,1.98,0.183,0,28.6406,77.2405,Old Delhi,Underground,False
+ST_DEL_DHA_44,Dhaula Kuan,206194,14728,775,1699,1.95,0.185,0,28.5925,77.161,South West,Elevated,True
+ST_DEL_DIL_34,Dilshad Garden,274573,19612,1032,2201,2.22,0.246,0,28.6759,77.3215,East Delhi,Elevated,False
+ST_DEL_DWK_18,Dwarka Sector 21,275970,19712,1037,2336,2.19,0.247,1,28.5523,77.0583,West Delhi,Underground,True
+ST_DEL_DWM_19,Dwarka Mor,274478,19606,1032,2205,2.2,0.246,0,28.6193,77.0332,West Delhi,Elevated,False
+ST_DEL_HAU_12,Hauz Khas,878115,62722,3301,7253,3.86,0.246,0,28.5432,77.2065,South Delhi,Underground,True
+ST_DEL_IGI_46,IGI Airport (T3),516473,36891,1942,4203,2.85,0.185,0,28.5562,77.0864,South West,Underground,False
+ST_DEL_IND_31,Inderlok,273634,19545,1029,2357,2.19,0.245,0,28.6732,77.1698,North West,Elevated,True
+ST_DEL_ITO_38,ITO,207082,14792,779,1850,2.05,0.185,0,28.6292,77.2412,Central Delhi,Underground,False
+ST_DEL_JAH_02,Jahangirpuri,273237,19517,1027,2297,2.25,0.245,0,28.7259,77.1643,North Delhi,Elevated,False
+ST_DEL_JAN_20,Janakpuri West,658092,47007,2474,5675,3.14,0.245,0,28.6294,77.0778,West Delhi,Elevated,True
+ST_DEL_KAL_41,Kalkaji Mandir,207498,14821,780,1709,1.99,0.186,1,28.5501,77.2514,South Delhi,Elevated,True
+ST_DEL_KAR_22,Karol Bagh,679705,48550,2555,5833,3.29,0.243,1,28.6442,77.1904,Central Delhi,Underground,False
+ST_DEL_KAS_05,Kashmere Gate,3070146,219296,3847,16247,4.27,0.229,4,28.6675,77.2285,Old Delhi,Underground,True
+ST_DEL_KHA_39,Khan Market,208464,14890,784,1740,2.02,0.187,0,28.6003,77.2272,Central Delhi,Underground,False
+ST_DEL_LAJ_40,Lajpat Nagar,469974,33570,1767,3876,2.74,0.183,0,28.5706,77.2374,South Delhi,Underground,True
+ST_DEL_LAQ_36,Lal Quila (Red Fort),205055,14647,771,1661,1.96,0.184,0,28.656,77.241,Old Delhi,Underground,False
+ST_DEL_MAN_23,Mandi House,1247944,89139,2346,6118,3.11,0.215,0,28.6258,77.2343,Central Delhi,Underground,True
+ST_DEL_MAY_25,Mayur Vihar-I,274226,19588,1031,2282,2.13,0.245,0,28.6047,77.2952,East Delhi,Elevated,True
+ST_DEL_MGR_16,MG Road Gurugram,273497,19536,1028,2209,2.25,0.245,0,28.48,77.0805,Gurugram,Elevated,False
+ST_DEL_MIL_17,Millennium City Centre,711741,50839,2676,6031,3.42,0.245,0,28.4593,77.0726,Gurugram,Elevated,False
+ST_DEL_MOD_03,Model Town,272554,19468,1025,2270,2.24,0.244,0,28.7027,77.1939,North Delhi,Elevated,False
+ST_DEL_NDL_07,New Delhi Railway,1831251,130804,3442,9491,4.0,0.216,0,28.6431,77.2223,Central Delhi,Underground,True
+ST_DEL_NOE_28,Noida Electronic City,273542,19539,1028,2342,2.18,0.245,0,28.6276,77.3725,Noida,Elevated,False
+ST_DEL_NOI_26,Noida Sector 18,740939,52924,2785,6107,3.39,0.246,0,28.5708,77.3219,Noida,Elevated,False
+ST_DEL_NSP_30,Netaji Subhash Place,272943,19496,1026,2438,2.15,0.244,0,28.6953,77.1524,North West,Elevated,True
+ST_DEL_PAT_09,Patel Chowk,273491,19535,1028,2360,2.25,0.245,0,28.6231,77.214,Central Delhi,Underground,False
+ST_DEL_QUT_14,Qutab Minar,275592,19685,1036,2396,2.2,0.247,0,28.5135,77.1858,South Delhi,Elevated,False
+ST_DEL_RAJ_08,Rajiv Chowk (CP),2495544,178253,4691,16232,4.85,0.248,6,28.6328,77.2195,Central Delhi,Underground,True
+ST_DEL_RAJ_21,Rajouri Garden,273755,19554,1029,2253,2.14,0.245,0,28.6489,77.1215,West Delhi,Elevated,True
+ST_DEL_RIT_29,Rithala,274193,19585,1031,2449,2.14,0.245,1,28.7207,77.1071,North West,Elevated,False
+ST_DEL_SAK_13,Saket,274565,19612,1032,2453,2.26,0.246,0,28.5204,77.2016,South Delhi,Underground,False
+ST_DEL_SAM_01,Samaypur Badli,275604,19686,1036,2341,2.26,0.247,0,28.7455,77.1352,North Delhi,Elevated,False
+ST_DEL_SEC_10,Central Secretariat,1433010,102358,2694,6936,3.44,0.214,0,28.6146,77.2119,Central Delhi,Underground,True
+ST_DEL_SHA_33,Shahdara,275339,19667,1035,2203,2.17,0.246,0,28.6735,77.2872,East Delhi,Elevated,False
+ST_DEL_SHI_43,Shivaji Stadium,205257,14661,772,1699,2.07,0.184,1,28.6295,77.213,Central Delhi,Underground,False
+ST_DEL_SIK_15,Sikanderpur,772021,55144,2902,6560,3.6,0.247,0,28.4819,77.0927,Gurugram,Elevated,True
+ST_DEL_SSG_35,Shaheed Sthal Ghaziabad,275371,19669,1035,2302,2.13,0.246,1,28.6711,77.4124,Ghaziabad,Elevated,False
+ST_DEL_TIS_32,Tis Hazari,272705,19479,1025,2298,2.24,0.244,0,28.6672,77.2163,Old Delhi,Elevated,False
+ST_DEL_VIS_04,Vishwavidyalaya (DU),274502,19607,1032,2302,2.23,0.246,0,28.6946,77.2137,North Delhi,Underground,False
+ST_DEL_YAS_47,Yashobhoomi Dwarka Sec 25,205045,14646,771,1748,2.1,0.184,1,28.545,77.042,South West,Underground,False

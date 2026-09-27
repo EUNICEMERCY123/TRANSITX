@@ -1,0 +1,6 @@
+route_id,route_name,total_passengers,daily_avg_passengers,avg_hourly_passengers,peak_hourly_passengers,avg_delay_min,max_delay_min,total_records,color_hex
+RT_CHN_BLUE,Blue Line,3901259,278661,1128,8385,2.26,10.5,3458,#2563EB
+RT_CHN_GREEN,Green Line,2796730,199766,809,6524,2.07,11.2,3458,#16A34A
+RT_CHN_ORANGE,Orange Line (MRTS),2293326,163809,784,3988,2.01,8.8,2926,#EA580C
+RT_CHN_PURPLE,Purple Line (Suburban West),1491067,106505,934,7132,2.11,10.7,1596,#9333EA
+RT_CHN_RED,Red Line (Suburban South),4338335,309881,1483,9098,2.51,11.4,2926,#DC2626

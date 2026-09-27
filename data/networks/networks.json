@@ -1,0 +1,42 @@
+[
+  {
+    "id": "chennai",
+    "name": "Chennai Transit Network",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "system_type": "Metro Rail, Southern Suburban & MRTS Corridors",
+    "operator": "CMRL & Southern Railway",
+    "center": [
+      13.045,
+      80.235
+    ],
+    "zoom": 11.8,
+    "pitch": 52,
+    "bearing": -12,
+    "lines_count": 5,
+    "stations_count": 47,
+    "color": "#2563EB",
+    "description": "Multi-modal transit network connecting Central Chennai to Airport, Tambaram suburban corridor, and coastal IT belts."
+  },
+  {
+    "id": "delhi",
+    "name": "Delhi Metro Rail (DMRC)",
+    "city": "Delhi NCR",
+    "state": "National Capital Region",
+    "country": "India",
+    "system_type": "Rapid Transit & Airport Express Metro",
+    "operator": "Delhi Metro Rail Corporation (DMRC)",
+    "center": [
+      28.6139,
+      77.209
+    ],
+    "zoom": 11.2,
+    "pitch": 54,
+    "bearing": -15,
+    "lines_count": 5,
+    "stations_count": 42,
+    "color": "#DC2626",
+    "description": "India's largest and most utilized rapid transit network connecting Delhi, Gurugram, Noida, and Ghaziabad."
+  }
+]

@@ -1,0 +1,764 @@
+[
+  {
+    "station_id": "ST_CHN_AIR_01",
+    "station_name": "Chennai Airport",
+    "latitude": 12.979,
+    "longitude": 80.165,
+    "zone": "South",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 1693,
+    "peak_passengers": 3804,
+    "avg_delay_min": 2.65,
+    "avg_occupancy": 0.183
+  },
+  {
+    "station_id": "ST_CHN_MEA_02",
+    "station_name": "Meenambakkam",
+    "latitude": 12.986,
+    "longitude": 80.177,
+    "zone": "South",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 765,
+    "peak_passengers": 1760,
+    "avg_delay_min": 2.0,
+    "avg_occupancy": 0.182
+  },
+  {
+    "station_id": "ST_CHN_ALN_03",
+    "station_name": "Alandur",
+    "latitude": 13.0035,
+    "longitude": 80.2015,
+    "zone": "South",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_BLUE",
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 766,
+    "peak_passengers": 1748,
+    "avg_delay_min": 1.97,
+    "avg_occupancy": 0.182
+  },
+  {
+    "station_id": "ST_CHN_GUI_04",
+    "station_name": "Guindy",
+    "latitude": 13.009,
+    "longitude": 80.213,
+    "zone": "South",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_BLUE",
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 1893,
+    "peak_passengers": 4259,
+    "avg_delay_min": 2.78,
+    "avg_occupancy": 0.18
+  },
+  {
+    "station_id": "ST_CHN_SAI_05",
+    "station_name": "Saidapet",
+    "latitude": 13.02,
+    "longitude": 80.228,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 767,
+    "peak_passengers": 1750,
+    "avg_delay_min": 2.02,
+    "avg_occupancy": 0.183
+  },
+  {
+    "station_id": "ST_CHN_NAN_06",
+    "station_name": "Nandanam",
+    "latitude": 13.028,
+    "longitude": 80.2405,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 755,
+    "peak_passengers": 1706,
+    "avg_delay_min": 1.94,
+    "avg_occupancy": 0.18
+  },
+  {
+    "station_id": "ST_CHN_TEY_07",
+    "station_name": "Teynampet",
+    "latitude": 13.036,
+    "longitude": 80.244,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 762,
+    "peak_passengers": 1627,
+    "avg_delay_min": 2.05,
+    "avg_occupancy": 0.181
+  },
+  {
+    "station_id": "ST_CHN_AGD_08",
+    "station_name": "AG-DMS",
+    "latitude": 13.044,
+    "longitude": 80.2475,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 771,
+    "peak_passengers": 1768,
+    "avg_delay_min": 1.98,
+    "avg_occupancy": 0.184
+  },
+  {
+    "station_id": "ST_CHN_THO_09",
+    "station_name": "Thousand Lights",
+    "latitude": 13.056,
+    "longitude": 80.252,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 765,
+    "peak_passengers": 1677,
+    "avg_delay_min": 1.98,
+    "avg_occupancy": 0.182
+  },
+  {
+    "station_id": "ST_CHN_LIC_10",
+    "station_name": "Government Estate",
+    "latitude": 13.0673,
+    "longitude": 80.2701,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 1299,
+    "peak_passengers": 3037,
+    "avg_delay_min": 2.42,
+    "avg_occupancy": 0.182
+  },
+  {
+    "station_id": "ST_CHN_CEN_11",
+    "station_name": "Chennai Central",
+    "latitude": 13.0827,
+    "longitude": 80.2755,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_BLUE",
+      "RT_CHN_GREEN",
+      "RT_CHN_RED",
+      "RT_CHN_PURPLE"
+    ],
+    "avg_passengers_per_hour": 2566,
+    "peak_passengers": 9098,
+    "avg_delay_min": 3.3,
+    "avg_occupancy": 0.161
+  },
+  {
+    "station_id": "ST_CHN_HIG_12",
+    "station_name": "High Court",
+    "latitude": 13.088,
+    "longitude": 80.287,
+    "zone": "North",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 768,
+    "peak_passengers": 1794,
+    "avg_delay_min": 2.01,
+    "avg_occupancy": 0.183
+  },
+  {
+    "station_id": "ST_CHN_WAS_13",
+    "station_name": "Washermanpet",
+    "latitude": 13.107,
+    "longitude": 80.289,
+    "zone": "North",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_BLUE"
+    ],
+    "avg_passengers_per_hour": 756,
+    "peak_passengers": 1702,
+    "avg_delay_min": 2.0,
+    "avg_occupancy": 0.18
+  },
+  {
+    "station_id": "ST_CHN_EGM_14",
+    "station_name": "Egmore",
+    "latitude": 13.0784,
+    "longitude": 80.2612,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_GREEN",
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 1617,
+    "peak_passengers": 4265,
+    "avg_delay_min": 2.64,
+    "avg_occupancy": 0.16
+  },
+  {
+    "station_id": "ST_CHN_NEH_15",
+    "station_name": "Nehru Park",
+    "latitude": 13.079,
+    "longitude": 80.248,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 573,
+    "peak_passengers": 1296,
+    "avg_delay_min": 1.88,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_KIL_16",
+    "station_name": "Kilpauk",
+    "latitude": 13.078,
+    "longitude": 80.241,
+    "zone": "Central",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 574,
+    "peak_passengers": 1311,
+    "avg_delay_min": 1.88,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_SHE_17",
+    "station_name": "Shenoy Nagar",
+    "latitude": 13.0775,
+    "longitude": 80.226,
+    "zone": "West",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 578,
+    "peak_passengers": 1302,
+    "avg_delay_min": 1.9,
+    "avg_occupancy": 0.138
+  },
+  {
+    "station_id": "ST_CHN_ANN_18",
+    "station_name": "Anna Nagar East",
+    "latitude": 13.085,
+    "longitude": 80.217,
+    "zone": "West",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 576,
+    "peak_passengers": 1216,
+    "avg_delay_min": 1.91,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_ANT_19",
+    "station_name": "Anna Nagar Tower",
+    "latitude": 13.086,
+    "longitude": 80.21,
+    "zone": "West",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 569,
+    "peak_passengers": 1343,
+    "avg_delay_min": 1.92,
+    "avg_occupancy": 0.135
+  },
+  {
+    "station_id": "ST_CHN_THI_20",
+    "station_name": "Thirumangalam",
+    "latitude": 13.085,
+    "longitude": 80.198,
+    "zone": "West",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 578,
+    "peak_passengers": 1282,
+    "avg_delay_min": 1.95,
+    "avg_occupancy": 0.138
+  },
+  {
+    "station_id": "ST_CHN_KOY_21",
+    "station_name": "Koyambedu",
+    "latitude": 13.0725,
+    "longitude": 80.1945,
+    "zone": "West",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 1189,
+    "peak_passengers": 2587,
+    "avg_delay_min": 2.32,
+    "avg_occupancy": 0.135
+  },
+  {
+    "station_id": "ST_CHN_CMB_22",
+    "station_name": "CMBT",
+    "latitude": 13.066,
+    "longitude": 80.203,
+    "zone": "West",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 577,
+    "peak_passengers": 1274,
+    "avg_delay_min": 1.94,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_VAD_23",
+    "station_name": "Vadapalani",
+    "latitude": 13.051,
+    "longitude": 80.212,
+    "zone": "West",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 576,
+    "peak_passengers": 1357,
+    "avg_delay_min": 1.92,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_ASH_24",
+    "station_name": "Ashok Nagar",
+    "latitude": 13.036,
+    "longitude": 80.2115,
+    "zone": "West",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_GREEN"
+    ],
+    "avg_passengers_per_hour": 579,
+    "peak_passengers": 1336,
+    "avg_delay_min": 1.85,
+    "avg_occupancy": 0.138
+  },
+  {
+    "station_id": "ST_CHN_STM_25",
+    "station_name": "St. Thomas Mount",
+    "latitude": 13.004,
+    "longitude": 80.196,
+    "zone": "South",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_GREEN",
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 666,
+    "peak_passengers": 1672,
+    "avg_delay_min": 1.95,
+    "avg_occupancy": 0.159
+  },
+  {
+    "station_id": "ST_CHN_BCH_26",
+    "station_name": "Chennai Beach",
+    "latitude": 13.0945,
+    "longitude": 80.293,
+    "zone": "North",
+    "station_type": "At-Grade",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_RED",
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 1138,
+    "peak_passengers": 2849,
+    "avg_delay_min": 2.25,
+    "avg_occupancy": 0.159
+  },
+  {
+    "station_id": "ST_CHN_FOR_27",
+    "station_name": "Chennai Fort",
+    "latitude": 13.0855,
+    "longitude": 80.288,
+    "zone": "Central",
+    "station_type": "At-Grade",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_RED",
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 668,
+    "peak_passengers": 1725,
+    "avg_delay_min": 1.88,
+    "avg_occupancy": 0.159
+  },
+  {
+    "station_id": "ST_CHN_PRK_28",
+    "station_name": "Park Town",
+    "latitude": 13.0805,
+    "longitude": 80.276,
+    "zone": "Central",
+    "station_type": "At-Grade",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_CHN_RED",
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 1206,
+    "peak_passengers": 3160,
+    "avg_delay_min": 2.3,
+    "avg_occupancy": 0.159
+  },
+  {
+    "station_id": "ST_CHN_NUN_29",
+    "station_name": "Nungambakkam",
+    "latitude": 13.062,
+    "longitude": 80.237,
+    "zone": "Central",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 763,
+    "peak_passengers": 1745,
+    "avg_delay_min": 2.02,
+    "avg_occupancy": 0.182
+  },
+  {
+    "station_id": "ST_CHN_KOD_30",
+    "station_name": "Kodambakkam",
+    "latitude": 13.051,
+    "longitude": 80.23,
+    "zone": "Central",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 764,
+    "peak_passengers": 1875,
+    "avg_delay_min": 2.07,
+    "avg_occupancy": 0.182
+  },
+  {
+    "station_id": "ST_CHN_MAM_31",
+    "station_name": "T. Nagar (Mambalam)",
+    "latitude": 13.0395,
+    "longitude": 80.228,
+    "zone": "Central",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 2221,
+    "peak_passengers": 4893,
+    "avg_delay_min": 3.1,
+    "avg_occupancy": 0.182
+  },
+  {
+    "station_id": "ST_CHN_PAL_32",
+    "station_name": "Pallavaram",
+    "latitude": 12.968,
+    "longitude": 80.147,
+    "zone": "South",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 600,
+    "peak_passengers": 1500,
+    "avg_delay_min": 2.1,
+    "avg_occupancy": 0.55
+  },
+  {
+    "station_id": "ST_CHN_CHR_33",
+    "station_name": "Chromepet",
+    "latitude": 12.952,
+    "longitude": 80.14,
+    "zone": "South",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 600,
+    "peak_passengers": 1500,
+    "avg_delay_min": 2.1,
+    "avg_occupancy": 0.55
+  },
+  {
+    "station_id": "ST_CHN_TAM_34",
+    "station_name": "Tambaram",
+    "latitude": 12.926,
+    "longitude": 80.117,
+    "zone": "South",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_RED"
+    ],
+    "avg_passengers_per_hour": 1676,
+    "peak_passengers": 3903,
+    "avg_delay_min": 2.6,
+    "avg_occupancy": 0.181
+  },
+  {
+    "station_id": "ST_CHN_CHN_35",
+    "station_name": "Chintadripet",
+    "latitude": 13.074,
+    "longitude": 80.274,
+    "zone": "Central",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 570,
+    "peak_passengers": 1388,
+    "avg_delay_min": 1.84,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_CHE_36",
+    "station_name": "Chepauk",
+    "latitude": 13.064,
+    "longitude": 80.279,
+    "zone": "Coastal",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 938,
+    "peak_passengers": 3988,
+    "avg_delay_min": 2.1,
+    "avg_occupancy": 0.14
+  },
+  {
+    "station_id": "ST_CHN_TRI_37",
+    "station_name": "Triplicane",
+    "latitude": 13.056,
+    "longitude": 80.277,
+    "zone": "Coastal",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 575,
+    "peak_passengers": 1394,
+    "avg_delay_min": 1.85,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_MYL_38",
+    "station_name": "Mylapore",
+    "latitude": 13.034,
+    "longitude": 80.269,
+    "zone": "Coastal",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 577,
+    "peak_passengers": 1364,
+    "avg_delay_min": 1.87,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_ADY_39",
+    "station_name": "Adyar (Kasturba)",
+    "latitude": 13.006,
+    "longitude": 80.252,
+    "zone": "Coastal",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 1086,
+    "peak_passengers": 2436,
+    "avg_delay_min": 2.21,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_THV_40",
+    "station_name": "Thiruvanmiyur",
+    "latitude": 12.986,
+    "longitude": 80.254,
+    "zone": "Coastal",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 575,
+    "peak_passengers": 1330,
+    "avg_delay_min": 1.91,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_TAR_41",
+    "station_name": "Taramani",
+    "latitude": 12.977,
+    "longitude": 80.244,
+    "zone": "South",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 572,
+    "peak_passengers": 1345,
+    "avg_delay_min": 1.85,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_VEL_42",
+    "station_name": "Velachery",
+    "latitude": 12.977,
+    "longitude": 80.218,
+    "zone": "South",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_ORANGE"
+    ],
+    "avg_passengers_per_hour": 1143,
+    "peak_passengers": 2597,
+    "avg_delay_min": 2.33,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_PER_43",
+    "station_name": "Perambur",
+    "latitude": 13.111,
+    "longitude": 80.244,
+    "zone": "North",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_PURPLE"
+    ],
+    "avg_passengers_per_hour": 1084,
+    "peak_passengers": 2389,
+    "avg_delay_min": 2.2,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_VIL_44",
+    "station_name": "Villivakkam",
+    "latitude": 13.11,
+    "longitude": 80.207,
+    "zone": "North",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_PURPLE"
+    ],
+    "avg_passengers_per_hour": 573,
+    "peak_passengers": 1281,
+    "avg_delay_min": 1.86,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_AMB_45",
+    "station_name": "Ambattur",
+    "latitude": 13.118,
+    "longitude": 80.155,
+    "zone": "West",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_PURPLE"
+    ],
+    "avg_passengers_per_hour": 571,
+    "peak_passengers": 1286,
+    "avg_delay_min": 1.87,
+    "avg_occupancy": 0.136
+  },
+  {
+    "station_id": "ST_CHN_AVA_46",
+    "station_name": "Avadi",
+    "latitude": 13.12,
+    "longitude": 80.1,
+    "zone": "West",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_PURPLE"
+    ],
+    "avg_passengers_per_hour": 577,
+    "peak_passengers": 1267,
+    "avg_delay_min": 1.79,
+    "avg_occupancy": 0.137
+  },
+  {
+    "station_id": "ST_CHN_TIR_47",
+    "station_name": "Tiruvallur",
+    "latitude": 13.143,
+    "longitude": 79.907,
+    "zone": "West",
+    "station_type": "At-Grade",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_CHN_PURPLE"
+    ],
+    "avg_passengers_per_hour": 576,
+    "peak_passengers": 1243,
+    "avg_delay_min": 1.9,
+    "avg_occupancy": 0.137
+  }
+]

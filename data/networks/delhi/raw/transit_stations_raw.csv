@@ -1,0 +1,48 @@
+station_id,station_name,latitude,longitude,zone,type,is_interchange,lines_served
+ST_DEL_SAM_01,Samaypur Badli,28.7455,77.1352,North Delhi,Elevated,False,RT_DEL_YELLOW
+ST_DEL_JAH_02,Jahangirpuri,28.7259,77.1643,North Delhi,Elevated,False,RT_DEL_YELLOW
+ST_DEL_MOD_03,Model Town,28.7027,77.1939,North Delhi,Elevated,False,RT_DEL_YELLOW
+ST_DEL_VIS_04,Vishwavidyalaya (DU),28.6946,77.2137,North Delhi,Underground,False,RT_DEL_YELLOW
+ST_DEL_KAS_05,Kashmere Gate,28.6675,77.2285,Old Delhi,Underground,True,RT_DEL_YELLOW;RT_DEL_RED;RT_DEL_VIOLET
+ST_DEL_CHA_06,Chandni Chowk,28.6578,77.2302,Old Delhi,Underground,False,RT_DEL_YELLOW
+ST_DEL_NDL_07,New Delhi Railway,28.6431,77.2223,Central Delhi,Underground,True,RT_DEL_YELLOW;RT_DEL_AIRPORT
+ST_DEL_RAJ_08,Rajiv Chowk (CP),28.6328,77.2195,Central Delhi,Underground,True,RT_DEL_YELLOW;RT_DEL_BLUE
+ST_DEL_PAT_09,Patel Chowk,28.6231,77.214,Central Delhi,Underground,False,RT_DEL_YELLOW
+ST_DEL_SEC_10,Central Secretariat,28.6146,77.2119,Central Delhi,Underground,True,RT_DEL_YELLOW;RT_DEL_VIOLET
+ST_DEL_AIM_11,AIIMS,28.5684,77.2078,South Delhi,Underground,False,RT_DEL_YELLOW
+ST_DEL_HAU_12,Hauz Khas,28.5432,77.2065,South Delhi,Underground,True,RT_DEL_YELLOW
+ST_DEL_SAK_13,Saket,28.5204,77.2016,South Delhi,Underground,False,RT_DEL_YELLOW
+ST_DEL_QUT_14,Qutab Minar,28.5135,77.1858,South Delhi,Elevated,False,RT_DEL_YELLOW
+ST_DEL_SIK_15,Sikanderpur,28.4819,77.0927,Gurugram,Elevated,True,RT_DEL_YELLOW
+ST_DEL_MGR_16,MG Road Gurugram,28.48,77.0805,Gurugram,Elevated,False,RT_DEL_YELLOW
+ST_DEL_MIL_17,Millennium City Centre,28.4593,77.0726,Gurugram,Elevated,False,RT_DEL_YELLOW
+ST_DEL_DWK_18,Dwarka Sector 21,28.5523,77.0583,West Delhi,Underground,True,RT_DEL_BLUE;RT_DEL_AIRPORT
+ST_DEL_DWM_19,Dwarka Mor,28.6193,77.0332,West Delhi,Elevated,False,RT_DEL_BLUE
+ST_DEL_JAN_20,Janakpuri West,28.6294,77.0778,West Delhi,Elevated,True,RT_DEL_BLUE
+ST_DEL_RAJ_21,Rajouri Garden,28.6489,77.1215,West Delhi,Elevated,True,RT_DEL_BLUE
+ST_DEL_KAR_22,Karol Bagh,28.6442,77.1904,Central Delhi,Underground,False,RT_DEL_BLUE
+ST_DEL_MAN_23,Mandi House,28.6258,77.2343,Central Delhi,Underground,True,RT_DEL_BLUE;RT_DEL_VIOLET
+ST_DEL_AKS_24,Akshardham,28.6179,77.2795,East Delhi,Elevated,False,RT_DEL_BLUE
+ST_DEL_MAY_25,Mayur Vihar-I,28.6047,77.2952,East Delhi,Elevated,True,RT_DEL_BLUE
+ST_DEL_NOI_26,Noida Sector 18,28.5708,77.3219,Noida,Elevated,False,RT_DEL_BLUE
+ST_DEL_BOT_27,Botanical Garden,28.5641,77.3343,Noida,Elevated,True,RT_DEL_BLUE
+ST_DEL_NOE_28,Noida Electronic City,28.6276,77.3725,Noida,Elevated,False,RT_DEL_BLUE
+ST_DEL_RIT_29,Rithala,28.7207,77.1071,North West,Elevated,False,RT_DEL_RED
+ST_DEL_NSP_30,Netaji Subhash Place,28.6953,77.1524,North West,Elevated,True,RT_DEL_RED
+ST_DEL_IND_31,Inderlok,28.6732,77.1698,North West,Elevated,True,RT_DEL_RED
+ST_DEL_TIS_32,Tis Hazari,28.6672,77.2163,Old Delhi,Elevated,False,RT_DEL_RED
+ST_DEL_SHA_33,Shahdara,28.6735,77.2872,East Delhi,Elevated,False,RT_DEL_RED
+ST_DEL_DIL_34,Dilshad Garden,28.6759,77.3215,East Delhi,Elevated,False,RT_DEL_RED
+ST_DEL_SSG_35,Shaheed Sthal Ghaziabad,28.6711,77.4124,Ghaziabad,Elevated,False,RT_DEL_RED
+ST_DEL_LAQ_36,Lal Quila (Red Fort),28.656,77.241,Old Delhi,Underground,False,RT_DEL_VIOLET
+ST_DEL_DEL_37,Delhi Gate,28.6406,77.2405,Old Delhi,Underground,False,RT_DEL_VIOLET
+ST_DEL_ITO_38,ITO,28.6292,77.2412,Central Delhi,Underground,False,RT_DEL_VIOLET
+ST_DEL_KHA_39,Khan Market,28.6003,77.2272,Central Delhi,Underground,False,RT_DEL_VIOLET
+ST_DEL_LAJ_40,Lajpat Nagar,28.5706,77.2374,South Delhi,Underground,True,RT_DEL_VIOLET
+ST_DEL_KAL_41,Kalkaji Mandir,28.5501,77.2514,South Delhi,Elevated,True,RT_DEL_VIOLET
+ST_DEL_BAD_42,Badarpur Border,28.4947,77.3005,South Delhi,Elevated,False,RT_DEL_VIOLET
+ST_DEL_SHI_43,Shivaji Stadium,28.6295,77.213,Central Delhi,Underground,False,RT_DEL_AIRPORT
+ST_DEL_DHA_44,Dhaula Kuan,28.5925,77.161,South West,Elevated,True,RT_DEL_AIRPORT
+ST_DEL_AER_45,Delhi Aerocity,28.5492,77.1215,South West,Underground,False,RT_DEL_AIRPORT
+ST_DEL_IGI_46,IGI Airport (T3),28.5562,77.0864,South West,Underground,False,RT_DEL_AIRPORT
+ST_DEL_YAS_47,Yashobhoomi Dwarka Sec 25,28.545,77.042,South West,Underground,False,RT_DEL_AIRPORT

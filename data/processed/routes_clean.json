@@ -1,0 +1,362 @@
+[
+  {
+    "route_id": "RT_CHN_BLUE",
+    "route_name": "Blue Line",
+    "line_code": "BLUE",
+    "color_hex": "#2F5D50",
+    "origin": "Chennai Airport",
+    "destination": "Washermanpet",
+    "length_km": 23.1,
+    "total_stations": 13,
+    "scheduled_headway_min": 5.0,
+    "station_sequence": [
+      "ST_CHN_AIR_01",
+      "ST_CHN_MEA_02",
+      "ST_CHN_ALN_03",
+      "ST_CHN_GUI_04",
+      "ST_CHN_SAI_05",
+      "ST_CHN_NAN_06",
+      "ST_CHN_TEY_07",
+      "ST_CHN_AGD_08",
+      "ST_CHN_THO_09",
+      "ST_CHN_LIC_10",
+      "ST_CHN_CEN_11",
+      "ST_CHN_HIG_12",
+      "ST_CHN_WAS_13"
+    ],
+    "coordinates_path": [
+      [
+        12.979,
+        80.165
+      ],
+      [
+        12.986,
+        80.177
+      ],
+      [
+        13.0035,
+        80.2015
+      ],
+      [
+        13.009,
+        80.213
+      ],
+      [
+        13.02,
+        80.228
+      ],
+      [
+        13.028,
+        80.2405
+      ],
+      [
+        13.036,
+        80.244
+      ],
+      [
+        13.044,
+        80.2475
+      ],
+      [
+        13.056,
+        80.252
+      ],
+      [
+        13.0673,
+        80.2701
+      ],
+      [
+        13.0827,
+        80.2755
+      ],
+      [
+        13.088,
+        80.287
+      ],
+      [
+        13.107,
+        80.289
+      ]
+    ],
+    "total_passengers": 3901259,
+    "daily_avg_passengers": 278661,
+    "avg_delay_min": 2.26
+  },
+  {
+    "route_id": "RT_CHN_GREEN",
+    "route_name": "Green Line",
+    "line_code": "GREEN",
+    "color_hex": "#71805A",
+    "origin": "Chennai Central",
+    "destination": "St. Thomas Mount",
+    "length_km": 22.0,
+    "total_stations": 13,
+    "scheduled_headway_min": 6.0,
+    "station_sequence": [
+      "ST_CHN_CEN_11",
+      "ST_CHN_EGM_14",
+      "ST_CHN_NEH_15",
+      "ST_CHN_KIL_16",
+      "ST_CHN_SHE_17",
+      "ST_CHN_ANN_18",
+      "ST_CHN_ANT_19",
+      "ST_CHN_THI_20",
+      "ST_CHN_KOY_21",
+      "ST_CHN_CMB_22",
+      "ST_CHN_VAD_23",
+      "ST_CHN_ASH_24",
+      "ST_CHN_STM_25"
+    ],
+    "coordinates_path": [
+      [
+        13.0827,
+        80.2755
+      ],
+      [
+        13.0784,
+        80.2612
+      ],
+      [
+        13.079,
+        80.248
+      ],
+      [
+        13.078,
+        80.241
+      ],
+      [
+        13.0775,
+        80.226
+      ],
+      [
+        13.085,
+        80.217
+      ],
+      [
+        13.086,
+        80.21
+      ],
+      [
+        13.085,
+        80.198
+      ],
+      [
+        13.0725,
+        80.1945
+      ],
+      [
+        13.066,
+        80.203
+      ],
+      [
+        13.051,
+        80.212
+      ],
+      [
+        13.036,
+        80.2115
+      ],
+      [
+        13.004,
+        80.196
+      ]
+    ],
+    "total_passengers": 2796730,
+    "daily_avg_passengers": 199766,
+    "avg_delay_min": 2.07
+  },
+  {
+    "route_id": "RT_CHN_RED",
+    "route_name": "Red Line (Suburban South)",
+    "line_code": "RED",
+    "color_hex": "#B94A3A",
+    "origin": "Chennai Beach",
+    "destination": "Tambaram",
+    "length_km": 29.0,
+    "total_stations": 11,
+    "scheduled_headway_min": 8.0,
+    "station_sequence": [
+      "ST_CHN_BCH_26",
+      "ST_CHN_FOR_27",
+      "ST_CHN_PRK_28",
+      "ST_CHN_CEN_11",
+      "ST_CHN_EGM_14",
+      "ST_CHN_NUN_29",
+      "ST_CHN_KOD_30",
+      "ST_CHN_MAM_31",
+      "ST_CHN_GUI_04",
+      "ST_CHN_STM_25",
+      "ST_CHN_TAM_34"
+    ],
+    "coordinates_path": [
+      [
+        13.0945,
+        80.293
+      ],
+      [
+        13.0855,
+        80.288
+      ],
+      [
+        13.0805,
+        80.276
+      ],
+      [
+        13.0827,
+        80.2755
+      ],
+      [
+        13.0784,
+        80.2612
+      ],
+      [
+        13.062,
+        80.237
+      ],
+      [
+        13.051,
+        80.23
+      ],
+      [
+        13.0395,
+        80.228
+      ],
+      [
+        13.009,
+        80.213
+      ],
+      [
+        13.004,
+        80.196
+      ],
+      [
+        12.926,
+        80.117
+      ]
+    ],
+    "total_passengers": 4338335,
+    "daily_avg_passengers": 309881,
+    "avg_delay_min": 2.51
+  },
+  {
+    "route_id": "RT_CHN_ORANGE",
+    "route_name": "Orange Line (MRTS)",
+    "line_code": "ORANGE",
+    "color_hex": "#C96F4A",
+    "origin": "Chennai Beach",
+    "destination": "Velachery",
+    "length_km": 19.3,
+    "total_stations": 11,
+    "scheduled_headway_min": 10.0,
+    "station_sequence": [
+      "ST_CHN_BCH_26",
+      "ST_CHN_FOR_27",
+      "ST_CHN_PRK_28",
+      "ST_CHN_CHN_35",
+      "ST_CHN_CHE_36",
+      "ST_CHN_TRI_37",
+      "ST_CHN_MYL_38",
+      "ST_CHN_ADY_39",
+      "ST_CHN_THV_40",
+      "ST_CHN_TAR_41",
+      "ST_CHN_VEL_42"
+    ],
+    "coordinates_path": [
+      [
+        13.0945,
+        80.293
+      ],
+      [
+        13.0855,
+        80.288
+      ],
+      [
+        13.0805,
+        80.276
+      ],
+      [
+        13.074,
+        80.274
+      ],
+      [
+        13.064,
+        80.279
+      ],
+      [
+        13.056,
+        80.277
+      ],
+      [
+        13.034,
+        80.269
+      ],
+      [
+        13.006,
+        80.252
+      ],
+      [
+        12.986,
+        80.254
+      ],
+      [
+        12.977,
+        80.244
+      ],
+      [
+        12.977,
+        80.218
+      ]
+    ],
+    "total_passengers": 2293326,
+    "daily_avg_passengers": 163809,
+    "avg_delay_min": 2.01
+  },
+  {
+    "route_id": "RT_CHN_PURPLE",
+    "route_name": "Purple Line (Suburban West)",
+    "line_code": "PURPLE",
+    "color_hex": "#7A5C6E",
+    "origin": "Chennai Central",
+    "destination": "Tiruvallur",
+    "length_km": 41.8,
+    "total_stations": 6,
+    "scheduled_headway_min": 12.0,
+    "station_sequence": [
+      "ST_CHN_CEN_11",
+      "ST_CHN_PER_43",
+      "ST_CHN_VIL_44",
+      "ST_CHN_AMB_45",
+      "ST_CHN_AVA_46",
+      "ST_CHN_TIR_47"
+    ],
+    "coordinates_path": [
+      [
+        13.0827,
+        80.2755
+      ],
+      [
+        13.111,
+        80.244
+      ],
+      [
+        13.11,
+        80.207
+      ],
+      [
+        13.118,
+        80.155
+      ],
+      [
+        13.12,
+        80.1
+      ],
+      [
+        13.143,
+        79.907
+      ]
+    ],
+    "total_passengers": 1491067,
+    "daily_avg_passengers": 106505,
+    "avg_delay_min": 2.11
+  }
+]

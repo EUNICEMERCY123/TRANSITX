@@ -1,0 +1,761 @@
+[
+  {
+    "station_id": "ST_DEL_SAM_01",
+    "station_name": "Samaypur Badli",
+    "latitude": 28.7455,
+    "longitude": 77.1352,
+    "zone": "North Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1036,
+    "peak_passengers": 2341,
+    "avg_delay_min": 2.26,
+    "avg_occupancy": 0.247
+  },
+  {
+    "station_id": "ST_DEL_JAH_02",
+    "station_name": "Jahangirpuri",
+    "latitude": 28.7259,
+    "longitude": 77.1643,
+    "zone": "North Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1027,
+    "peak_passengers": 2297,
+    "avg_delay_min": 2.25,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_MOD_03",
+    "station_name": "Model Town",
+    "latitude": 28.7027,
+    "longitude": 77.1939,
+    "zone": "North Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1025,
+    "peak_passengers": 2270,
+    "avg_delay_min": 2.24,
+    "avg_occupancy": 0.244
+  },
+  {
+    "station_id": "ST_DEL_VIS_04",
+    "station_name": "Vishwavidyalaya (DU)",
+    "latitude": 28.6946,
+    "longitude": 77.2137,
+    "zone": "North Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1032,
+    "peak_passengers": 2302,
+    "avg_delay_min": 2.23,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_KAS_05",
+    "station_name": "Kashmere Gate",
+    "latitude": 28.6675,
+    "longitude": 77.2285,
+    "zone": "Old Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_YELLOW",
+      "RT_DEL_RED",
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 3847,
+    "peak_passengers": 16247,
+    "avg_delay_min": 4.27,
+    "avg_occupancy": 0.229
+  },
+  {
+    "station_id": "ST_DEL_CHA_06",
+    "station_name": "Chandni Chowk",
+    "latitude": 28.6578,
+    "longitude": 77.2302,
+    "zone": "Old Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 2893,
+    "peak_passengers": 6299,
+    "avg_delay_min": 3.55,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_NDL_07",
+    "station_name": "New Delhi Railway",
+    "latitude": 28.6431,
+    "longitude": 77.2223,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_YELLOW",
+      "RT_DEL_AIRPORT"
+    ],
+    "avg_passengers_per_hour": 3442,
+    "peak_passengers": 9491,
+    "avg_delay_min": 4.0,
+    "avg_occupancy": 0.216
+  },
+  {
+    "station_id": "ST_DEL_RAJ_08",
+    "station_name": "Rajiv Chowk (CP)",
+    "latitude": 28.6328,
+    "longitude": 77.2195,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_YELLOW",
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 4691,
+    "peak_passengers": 16232,
+    "avg_delay_min": 4.85,
+    "avg_occupancy": 0.248
+  },
+  {
+    "station_id": "ST_DEL_PAT_09",
+    "station_name": "Patel Chowk",
+    "latitude": 28.6231,
+    "longitude": 77.214,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1028,
+    "peak_passengers": 2360,
+    "avg_delay_min": 2.25,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_SEC_10",
+    "station_name": "Central Secretariat",
+    "latitude": 28.6146,
+    "longitude": 77.2119,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_YELLOW",
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 2694,
+    "peak_passengers": 6936,
+    "avg_delay_min": 3.44,
+    "avg_occupancy": 0.214
+  },
+  {
+    "station_id": "ST_DEL_AIM_11",
+    "station_name": "AIIMS",
+    "latitude": 28.5684,
+    "longitude": 77.2078,
+    "zone": "South Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 2806,
+    "peak_passengers": 6075,
+    "avg_delay_min": 3.55,
+    "avg_occupancy": 0.247
+  },
+  {
+    "station_id": "ST_DEL_HAU_12",
+    "station_name": "Hauz Khas",
+    "latitude": 28.5432,
+    "longitude": 77.2065,
+    "zone": "South Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 3301,
+    "peak_passengers": 7253,
+    "avg_delay_min": 3.86,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_SAK_13",
+    "station_name": "Saket",
+    "latitude": 28.5204,
+    "longitude": 77.2016,
+    "zone": "South Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1032,
+    "peak_passengers": 2453,
+    "avg_delay_min": 2.26,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_QUT_14",
+    "station_name": "Qutab Minar",
+    "latitude": 28.5135,
+    "longitude": 77.1858,
+    "zone": "South Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1036,
+    "peak_passengers": 2396,
+    "avg_delay_min": 2.2,
+    "avg_occupancy": 0.247
+  },
+  {
+    "station_id": "ST_DEL_SIK_15",
+    "station_name": "Sikanderpur",
+    "latitude": 28.4819,
+    "longitude": 77.0927,
+    "zone": "Gurugram",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 2902,
+    "peak_passengers": 6560,
+    "avg_delay_min": 3.6,
+    "avg_occupancy": 0.247
+  },
+  {
+    "station_id": "ST_DEL_MGR_16",
+    "station_name": "MG Road Gurugram",
+    "latitude": 28.48,
+    "longitude": 77.0805,
+    "zone": "Gurugram",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 1028,
+    "peak_passengers": 2209,
+    "avg_delay_min": 2.25,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_MIL_17",
+    "station_name": "Millennium City Centre",
+    "latitude": 28.4593,
+    "longitude": 77.0726,
+    "zone": "Gurugram",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_YELLOW"
+    ],
+    "avg_passengers_per_hour": 2676,
+    "peak_passengers": 6031,
+    "avg_delay_min": 3.42,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_DWK_18",
+    "station_name": "Dwarka Sector 21",
+    "latitude": 28.5523,
+    "longitude": 77.0583,
+    "zone": "West Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_BLUE",
+      "RT_DEL_AIRPORT"
+    ],
+    "avg_passengers_per_hour": 1037,
+    "peak_passengers": 2336,
+    "avg_delay_min": 2.19,
+    "avg_occupancy": 0.247
+  },
+  {
+    "station_id": "ST_DEL_DWM_19",
+    "station_name": "Dwarka Mor",
+    "latitude": 28.6193,
+    "longitude": 77.0332,
+    "zone": "West Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 1032,
+    "peak_passengers": 2205,
+    "avg_delay_min": 2.2,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_JAN_20",
+    "station_name": "Janakpuri West",
+    "latitude": 28.6294,
+    "longitude": 77.0778,
+    "zone": "West Delhi",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 2474,
+    "peak_passengers": 5675,
+    "avg_delay_min": 3.14,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_RAJ_21",
+    "station_name": "Rajouri Garden",
+    "latitude": 28.6489,
+    "longitude": 77.1215,
+    "zone": "West Delhi",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 1029,
+    "peak_passengers": 2253,
+    "avg_delay_min": 2.14,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_KAR_22",
+    "station_name": "Karol Bagh",
+    "latitude": 28.6442,
+    "longitude": 77.1904,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 2555,
+    "peak_passengers": 5833,
+    "avg_delay_min": 3.29,
+    "avg_occupancy": 0.243
+  },
+  {
+    "station_id": "ST_DEL_MAN_23",
+    "station_name": "Mandi House",
+    "latitude": 28.6258,
+    "longitude": 77.2343,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_BLUE",
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 2346,
+    "peak_passengers": 6118,
+    "avg_delay_min": 3.11,
+    "avg_occupancy": 0.215
+  },
+  {
+    "station_id": "ST_DEL_AKS_24",
+    "station_name": "Akshardham",
+    "latitude": 28.6179,
+    "longitude": 77.2795,
+    "zone": "East Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 2257,
+    "peak_passengers": 5230,
+    "avg_delay_min": 3.04,
+    "avg_occupancy": 0.244
+  },
+  {
+    "station_id": "ST_DEL_MAY_25",
+    "station_name": "Mayur Vihar-I",
+    "latitude": 28.6047,
+    "longitude": 77.2952,
+    "zone": "East Delhi",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 1031,
+    "peak_passengers": 2282,
+    "avg_delay_min": 2.13,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_NOI_26",
+    "station_name": "Noida Sector 18",
+    "latitude": 28.5708,
+    "longitude": 77.3219,
+    "zone": "Noida",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 2785,
+    "peak_passengers": 6107,
+    "avg_delay_min": 3.39,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_BOT_27",
+    "station_name": "Botanical Garden",
+    "latitude": 28.5641,
+    "longitude": 77.3343,
+    "zone": "Noida",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 2983,
+    "peak_passengers": 6403,
+    "avg_delay_min": 3.6,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_NOE_28",
+    "station_name": "Noida Electronic City",
+    "latitude": 28.6276,
+    "longitude": 77.3725,
+    "zone": "Noida",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_BLUE"
+    ],
+    "avg_passengers_per_hour": 1028,
+    "peak_passengers": 2342,
+    "avg_delay_min": 2.18,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_RIT_29",
+    "station_name": "Rithala",
+    "latitude": 28.7207,
+    "longitude": 77.1071,
+    "zone": "North West",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_RED"
+    ],
+    "avg_passengers_per_hour": 1031,
+    "peak_passengers": 2449,
+    "avg_delay_min": 2.14,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_NSP_30",
+    "station_name": "Netaji Subhash Place",
+    "latitude": 28.6953,
+    "longitude": 77.1524,
+    "zone": "North West",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_RED"
+    ],
+    "avg_passengers_per_hour": 1026,
+    "peak_passengers": 2438,
+    "avg_delay_min": 2.15,
+    "avg_occupancy": 0.244
+  },
+  {
+    "station_id": "ST_DEL_IND_31",
+    "station_name": "Inderlok",
+    "latitude": 28.6732,
+    "longitude": 77.1698,
+    "zone": "North West",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_RED"
+    ],
+    "avg_passengers_per_hour": 1029,
+    "peak_passengers": 2357,
+    "avg_delay_min": 2.19,
+    "avg_occupancy": 0.245
+  },
+  {
+    "station_id": "ST_DEL_TIS_32",
+    "station_name": "Tis Hazari",
+    "latitude": 28.6672,
+    "longitude": 77.2163,
+    "zone": "Old Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_RED"
+    ],
+    "avg_passengers_per_hour": 1025,
+    "peak_passengers": 2298,
+    "avg_delay_min": 2.24,
+    "avg_occupancy": 0.244
+  },
+  {
+    "station_id": "ST_DEL_SHA_33",
+    "station_name": "Shahdara",
+    "latitude": 28.6735,
+    "longitude": 77.2872,
+    "zone": "East Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_RED"
+    ],
+    "avg_passengers_per_hour": 1035,
+    "peak_passengers": 2203,
+    "avg_delay_min": 2.17,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_DIL_34",
+    "station_name": "Dilshad Garden",
+    "latitude": 28.6759,
+    "longitude": 77.3215,
+    "zone": "East Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_RED"
+    ],
+    "avg_passengers_per_hour": 1032,
+    "peak_passengers": 2201,
+    "avg_delay_min": 2.22,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_SSG_35",
+    "station_name": "Shaheed Sthal Ghaziabad",
+    "latitude": 28.6711,
+    "longitude": 77.4124,
+    "zone": "Ghaziabad",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_RED"
+    ],
+    "avg_passengers_per_hour": 1035,
+    "peak_passengers": 2302,
+    "avg_delay_min": 2.13,
+    "avg_occupancy": 0.246
+  },
+  {
+    "station_id": "ST_DEL_LAQ_36",
+    "station_name": "Lal Quila (Red Fort)",
+    "latitude": 28.656,
+    "longitude": 77.241,
+    "zone": "Old Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 771,
+    "peak_passengers": 1661,
+    "avg_delay_min": 1.96,
+    "avg_occupancy": 0.184
+  },
+  {
+    "station_id": "ST_DEL_DEL_37",
+    "station_name": "Delhi Gate",
+    "latitude": 28.6406,
+    "longitude": 77.2405,
+    "zone": "Old Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 769,
+    "peak_passengers": 1821,
+    "avg_delay_min": 1.98,
+    "avg_occupancy": 0.183
+  },
+  {
+    "station_id": "ST_DEL_ITO_38",
+    "station_name": "ITO",
+    "latitude": 28.6292,
+    "longitude": 77.2412,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 779,
+    "peak_passengers": 1850,
+    "avg_delay_min": 2.05,
+    "avg_occupancy": 0.185
+  },
+  {
+    "station_id": "ST_DEL_KHA_39",
+    "station_name": "Khan Market",
+    "latitude": 28.6003,
+    "longitude": 77.2272,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 784,
+    "peak_passengers": 1740,
+    "avg_delay_min": 2.02,
+    "avg_occupancy": 0.187
+  },
+  {
+    "station_id": "ST_DEL_LAJ_40",
+    "station_name": "Lajpat Nagar",
+    "latitude": 28.5706,
+    "longitude": 77.2374,
+    "zone": "South Delhi",
+    "station_type": "Underground",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 1767,
+    "peak_passengers": 3876,
+    "avg_delay_min": 2.74,
+    "avg_occupancy": 0.183
+  },
+  {
+    "station_id": "ST_DEL_KAL_41",
+    "station_name": "Kalkaji Mandir",
+    "latitude": 28.5501,
+    "longitude": 77.2514,
+    "zone": "South Delhi",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 780,
+    "peak_passengers": 1709,
+    "avg_delay_min": 1.99,
+    "avg_occupancy": 0.186
+  },
+  {
+    "station_id": "ST_DEL_BAD_42",
+    "station_name": "Badarpur Border",
+    "latitude": 28.4947,
+    "longitude": 77.3005,
+    "zone": "South Delhi",
+    "station_type": "Elevated",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_VIOLET"
+    ],
+    "avg_passengers_per_hour": 774,
+    "peak_passengers": 1917,
+    "avg_delay_min": 1.93,
+    "avg_occupancy": 0.184
+  },
+  {
+    "station_id": "ST_DEL_SHI_43",
+    "station_name": "Shivaji Stadium",
+    "latitude": 28.6295,
+    "longitude": 77.213,
+    "zone": "Central Delhi",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_AIRPORT"
+    ],
+    "avg_passengers_per_hour": 772,
+    "peak_passengers": 1699,
+    "avg_delay_min": 2.07,
+    "avg_occupancy": 0.184
+  },
+  {
+    "station_id": "ST_DEL_DHA_44",
+    "station_name": "Dhaula Kuan",
+    "latitude": 28.5925,
+    "longitude": 77.161,
+    "zone": "South West",
+    "station_type": "Elevated",
+    "is_interchange": true,
+    "lines_served": [
+      "RT_DEL_AIRPORT"
+    ],
+    "avg_passengers_per_hour": 775,
+    "peak_passengers": 1699,
+    "avg_delay_min": 1.95,
+    "avg_occupancy": 0.185
+  },
+  {
+    "station_id": "ST_DEL_AER_45",
+    "station_name": "Delhi Aerocity",
+    "latitude": 28.5492,
+    "longitude": 77.1215,
+    "zone": "South West",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_AIRPORT"
+    ],
+    "avg_passengers_per_hour": 770,
+    "peak_passengers": 1740,
+    "avg_delay_min": 2.0,
+    "avg_occupancy": 0.183
+  },
+  {
+    "station_id": "ST_DEL_IGI_46",
+    "station_name": "IGI Airport (T3)",
+    "latitude": 28.5562,
+    "longitude": 77.0864,
+    "zone": "South West",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_AIRPORT"
+    ],
+    "avg_passengers_per_hour": 1942,
+    "peak_passengers": 4203,
+    "avg_delay_min": 2.85,
+    "avg_occupancy": 0.185
+  },
+  {
+    "station_id": "ST_DEL_YAS_47",
+    "station_name": "Yashobhoomi Dwarka Sec 25",
+    "latitude": 28.545,
+    "longitude": 77.042,
+    "zone": "South West",
+    "station_type": "Underground",
+    "is_interchange": false,
+    "lines_served": [
+      "RT_DEL_AIRPORT"
+    ],
+    "avg_passengers_per_hour": 771,
+    "peak_passengers": 1748,
+    "avg_delay_min": 2.1,
+    "avg_occupancy": 0.184
+  }
+]

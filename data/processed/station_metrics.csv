@@ -1,0 +1,46 @@
+station_id,station_name,total_passengers,daily_avg_passengers,avg_passengers_per_hour,peak_passengers,avg_delay_min,avg_occupancy,anomaly_count,latitude,longitude,zone,type,is_interchange
+ST_CHN_ADY_39,Adyar (Kasturba),288990,20642,1086,2436,2.21,0.136,1,13.006,80.252,Coastal,Elevated,False
+ST_CHN_AGD_08,AG-DMS,205089,14649,771,1768,1.98,0.184,0,13.044,80.2475,Central,Underground,False
+ST_CHN_AIR_01,Chennai Airport,450281,32163,1693,3804,2.65,0.183,0,12.979,80.165,South,Elevated,False
+ST_CHN_ALN_03,Alandur,203720,14551,766,1748,1.97,0.182,0,13.0035,80.2015,South,Elevated,True
+ST_CHN_AMB_45,Ambattur,151812,10844,571,1286,1.87,0.136,0,13.118,80.155,West,At-Grade,False
+ST_CHN_ANN_18,Anna Nagar East,153113,10937,576,1216,1.91,0.137,0,13.085,80.217,West,Underground,False
+ST_CHN_ANT_19,Anna Nagar Tower,151338,10810,569,1343,1.92,0.135,0,13.086,80.21,West,Underground,False
+ST_CHN_ASH_24,Ashok Nagar,154062,11004,579,1336,1.85,0.138,0,13.036,80.2115,West,Elevated,False
+ST_CHN_AVA_46,Avadi,153498,10964,577,1267,1.79,0.137,0,13.12,80.1,West,At-Grade,False
+ST_CHN_BCH_26,Chennai Beach,605214,43230,1138,2849,2.25,0.159,0,13.0945,80.293,North,At-Grade,True
+ST_CHN_CEN_11,Chennai Central,2730048,195003,2566,9098,3.3,0.161,3,13.0827,80.2755,Central,Underground,True
+ST_CHN_CHE_36,Chepauk,249635,17831,938,3988,2.1,0.14,3,13.064,80.279,Coastal,Elevated,False
+ST_CHN_CHN_35,Chintadripet,151751,10839,570,1388,1.84,0.136,0,13.074,80.274,Central,Elevated,False
+ST_CHN_CMB_22,CMBT,153536,10967,577,1274,1.94,0.137,0,13.066,80.203,West,Elevated,False
+ST_CHN_EGM_14,Egmore,860239,61446,1617,4265,2.64,0.16,0,13.0784,80.2612,Central,Underground,True
+ST_CHN_FOR_27,Chennai Fort,355383,25384,668,1725,1.88,0.159,0,13.0855,80.288,Central,At-Grade,True
+ST_CHN_GUI_04,Guindy,1006856,71918,1893,4259,2.78,0.18,2,13.009,80.213,South,Elevated,True
+ST_CHN_HIG_12,High Court,204378,14598,768,1794,2.01,0.183,0,13.088,80.287,North,Underground,False
+ST_CHN_KIL_16,Kilpauk,152789,10914,574,1311,1.88,0.137,0,13.078,80.241,Central,Underground,False
+ST_CHN_KOD_30,Kodambakkam,203251,14518,764,1875,2.07,0.182,1,13.051,80.23,Central,At-Grade,False
+ST_CHN_KOY_21,Koyambedu,316364,22597,1189,2587,2.32,0.135,0,13.0725,80.1945,West,Elevated,False
+ST_CHN_LIC_10,Government Estate,345492,24678,1299,3037,2.42,0.182,0,13.0673,80.2701,Central,Underground,False
+ST_CHN_MAM_31,T. Nagar (Mambalam),590880,42206,2221,4893,3.1,0.182,0,13.0395,80.228,Central,At-Grade,False
+ST_CHN_MEA_02,Meenambakkam,203622,14544,765,1760,2.0,0.182,0,12.986,80.177,South,Elevated,False
+ST_CHN_MYL_38,Mylapore,153498,10964,577,1364,1.87,0.137,0,13.034,80.269,Coastal,Elevated,False
+ST_CHN_NAN_06,Nandanam,200753,14340,755,1706,1.94,0.18,0,13.028,80.2405,Central,Underground,False
+ST_CHN_NEH_15,Nehru Park,152403,10886,573,1296,1.88,0.136,0,13.079,80.248,Central,Underground,False
+ST_CHN_NUN_29,Nungambakkam,203057,14504,763,1745,2.02,0.182,1,13.062,80.237,Central,At-Grade,False
+ST_CHN_PER_43,Perambur,288326,20595,1084,2389,2.2,0.136,0,13.111,80.244,North,At-Grade,False
+ST_CHN_PRK_28,Park Town,641505,45822,1206,3160,2.3,0.159,0,13.0805,80.276,Central,At-Grade,True
+ST_CHN_SAI_05,Saidapet,204036,14574,767,1750,2.02,0.183,0,13.02,80.228,Central,Underground,False
+ST_CHN_SHE_17,Shenoy Nagar,153799,10986,578,1302,1.9,0.138,1,13.0775,80.226,West,Underground,False
+ST_CHN_STM_25,St. Thomas Mount,354151,25296,666,1672,1.95,0.159,0,13.004,80.196,South,Elevated,True
+ST_CHN_TAM_34,Tambaram,445865,31848,1676,3903,2.6,0.181,0,12.926,80.117,South,At-Grade,False
+ST_CHN_TAR_41,Taramani,152260,10876,572,1345,1.85,0.136,0,12.977,80.244,South,Elevated,False
+ST_CHN_TEY_07,Teynampet,202760,14483,762,1627,2.05,0.181,0,13.036,80.244,Central,Underground,False
+ST_CHN_THI_20,Thirumangalam,153878,10991,578,1282,1.95,0.138,0,13.085,80.198,West,Underground,False
+ST_CHN_THO_09,Thousand Lights,203412,14529,765,1677,1.98,0.182,1,13.056,80.252,Central,Underground,False
+ST_CHN_THV_40,Thiruvanmiyur,152935,10924,575,1330,1.91,0.137,0,12.986,80.254,Coastal,Elevated,False
+ST_CHN_TIR_47,Tiruvallur,153120,10937,576,1243,1.9,0.137,0,13.143,79.907,West,At-Grade,False
+ST_CHN_TRI_37,Triplicane,152897,10921,575,1394,1.85,0.137,0,13.056,80.277,Coastal,Elevated,False
+ST_CHN_VAD_23,Vadapalani,153342,10953,576,1357,1.92,0.137,0,13.051,80.212,West,Elevated,False
+ST_CHN_VEL_42,Velachery,303934,21710,1143,2597,2.33,0.136,1,12.977,80.218,South,Elevated,False
+ST_CHN_VIL_44,Villivakkam,152438,10888,573,1281,1.86,0.136,0,13.11,80.207,North,At-Grade,False
+ST_CHN_WAS_13,Washermanpet,201007,14358,756,1702,2.0,0.18,0,13.107,80.289,North,Underground,False

@@ -1,0 +1,48 @@
+station_id,station_name,latitude,longitude,zone,type,is_interchange,lines_served
+ST_CHN_AIR_01,Chennai Airport,12.979,80.165,South,Elevated,False,RT_CHN_BLUE
+ST_CHN_MEA_02,Meenambakkam,12.986,80.177,South,Elevated,False,RT_CHN_BLUE
+ST_CHN_ALN_03,Alandur,13.0035,80.2015,South,Elevated,True,RT_CHN_BLUE;RT_CHN_GREEN
+ST_CHN_GUI_04,Guindy,13.009,80.213,South,Elevated,True,RT_CHN_BLUE;RT_CHN_RED
+ST_CHN_SAI_05,Saidapet,13.02,80.228,Central,Underground,False,RT_CHN_BLUE
+ST_CHN_NAN_06,Nandanam,13.028,80.2405,Central,Underground,False,RT_CHN_BLUE
+ST_CHN_TEY_07,Teynampet,13.036,80.244,Central,Underground,False,RT_CHN_BLUE
+ST_CHN_AGD_08,AG-DMS,13.044,80.2475,Central,Underground,False,RT_CHN_BLUE
+ST_CHN_THO_09,Thousand Lights,13.056,80.252,Central,Underground,False,RT_CHN_BLUE
+ST_CHN_LIC_10,Government Estate,13.0673,80.2701,Central,Underground,False,RT_CHN_BLUE
+ST_CHN_CEN_11,Chennai Central,13.0827,80.2755,Central,Underground,True,RT_CHN_BLUE;RT_CHN_GREEN;RT_CHN_RED;RT_CHN_PURPLE
+ST_CHN_HIG_12,High Court,13.088,80.287,North,Underground,False,RT_CHN_BLUE
+ST_CHN_WAS_13,Washermanpet,13.107,80.289,North,Underground,False,RT_CHN_BLUE
+ST_CHN_EGM_14,Egmore,13.0784,80.2612,Central,Underground,True,RT_CHN_GREEN;RT_CHN_RED
+ST_CHN_NEH_15,Nehru Park,13.079,80.248,Central,Underground,False,RT_CHN_GREEN
+ST_CHN_KIL_16,Kilpauk,13.078,80.241,Central,Underground,False,RT_CHN_GREEN
+ST_CHN_SHE_17,Shenoy Nagar,13.0775,80.226,West,Underground,False,RT_CHN_GREEN
+ST_CHN_ANN_18,Anna Nagar East,13.085,80.217,West,Underground,False,RT_CHN_GREEN
+ST_CHN_ANT_19,Anna Nagar Tower,13.086,80.21,West,Underground,False,RT_CHN_GREEN
+ST_CHN_THI_20,Thirumangalam,13.085,80.198,West,Underground,False,RT_CHN_GREEN
+ST_CHN_KOY_21,Koyambedu,13.0725,80.1945,West,Elevated,False,RT_CHN_GREEN
+ST_CHN_CMB_22,CMBT,13.066,80.203,West,Elevated,False,RT_CHN_GREEN
+ST_CHN_VAD_23,Vadapalani,13.051,80.212,West,Elevated,False,RT_CHN_GREEN
+ST_CHN_ASH_24,Ashok Nagar,13.036,80.2115,West,Elevated,False,RT_CHN_GREEN
+ST_CHN_STM_25,St. Thomas Mount,13.004,80.196,South,Elevated,True,RT_CHN_GREEN;RT_CHN_RED
+ST_CHN_BCH_26,Chennai Beach,13.0945,80.293,North,At-Grade,True,RT_CHN_RED;RT_CHN_ORANGE
+ST_CHN_FOR_27,Chennai Fort,13.0855,80.288,Central,At-Grade,True,RT_CHN_RED;RT_CHN_ORANGE
+ST_CHN_PRK_28,Park Town,13.0805,80.276,Central,At-Grade,True,RT_CHN_RED;RT_CHN_ORANGE
+ST_CHN_NUN_29,Nungambakkam,13.062,80.237,Central,At-Grade,False,RT_CHN_RED
+ST_CHN_KOD_30,Kodambakkam,13.051,80.23,Central,At-Grade,False,RT_CHN_RED
+ST_CHN_MAM_31,T. Nagar (Mambalam),13.0395,80.228,Central,At-Grade,False,RT_CHN_RED
+ST_CHN_PAL_32,Pallavaram,12.968,80.147,South,At-Grade,False,RT_CHN_RED
+ST_CHN_CHR_33,Chromepet,12.952,80.14,South,At-Grade,False,RT_CHN_RED
+ST_CHN_TAM_34,Tambaram,12.926,80.117,South,At-Grade,False,RT_CHN_RED
+ST_CHN_CHN_35,Chintadripet,13.074,80.274,Central,Elevated,False,RT_CHN_ORANGE
+ST_CHN_CHE_36,Chepauk,13.064,80.279,Coastal,Elevated,False,RT_CHN_ORANGE
+ST_CHN_TRI_37,Triplicane,13.056,80.277,Coastal,Elevated,False,RT_CHN_ORANGE
+ST_CHN_MYL_38,Mylapore,13.034,80.269,Coastal,Elevated,False,RT_CHN_ORANGE
+ST_CHN_ADY_39,Adyar (Kasturba),13.006,80.252,Coastal,Elevated,False,RT_CHN_ORANGE
+ST_CHN_THV_40,Thiruvanmiyur,12.986,80.254,Coastal,Elevated,False,RT_CHN_ORANGE
+ST_CHN_TAR_41,Taramani,12.977,80.244,South,Elevated,False,RT_CHN_ORANGE
+ST_CHN_VEL_42,Velachery,12.977,80.218,South,Elevated,False,RT_CHN_ORANGE
+ST_CHN_PER_43,Perambur,13.111,80.244,North,At-Grade,False,RT_CHN_PURPLE
+ST_CHN_VIL_44,Villivakkam,13.11,80.207,North,At-Grade,False,RT_CHN_PURPLE
+ST_CHN_AMB_45,Ambattur,13.118,80.155,West,At-Grade,False,RT_CHN_PURPLE
+ST_CHN_AVA_46,Avadi,13.12,80.1,West,At-Grade,False,RT_CHN_PURPLE
+ST_CHN_TIR_47,Tiruvallur,13.143,79.907,West,At-Grade,False,RT_CHN_PURPLE

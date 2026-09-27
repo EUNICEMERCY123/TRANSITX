@@ -1,0 +1,357 @@
+[
+  {
+    "route_id": "RT_DEL_YELLOW",
+    "route_name": "Yellow Line (Line 2)",
+    "line_code": "YELLOW",
+    "color_hex": "#D89B32",
+    "origin": "Samaypur Badli",
+    "destination": "Millennium City Centre Gurugram",
+    "length_km": 49.3,
+    "total_stations": 17,
+    "scheduled_headway_min": 3.0,
+    "station_sequence": [
+      "ST_DEL_SAM_01",
+      "ST_DEL_JAH_02",
+      "ST_DEL_MOD_03",
+      "ST_DEL_VIS_04",
+      "ST_DEL_KAS_05",
+      "ST_DEL_CHA_06",
+      "ST_DEL_NDL_07",
+      "ST_DEL_RAJ_08",
+      "ST_DEL_PAT_09",
+      "ST_DEL_SEC_10",
+      "ST_DEL_AIM_11",
+      "ST_DEL_HAU_12",
+      "ST_DEL_SAK_13",
+      "ST_DEL_QUT_14",
+      "ST_DEL_SIK_15",
+      "ST_DEL_MGR_16",
+      "ST_DEL_MIL_17"
+    ],
+    "coordinates_path": [
+      [
+        28.7455,
+        77.1352
+      ],
+      [
+        28.7259,
+        77.1643
+      ],
+      [
+        28.7027,
+        77.1939
+      ],
+      [
+        28.6946,
+        77.2137
+      ],
+      [
+        28.6675,
+        77.2285
+      ],
+      [
+        28.6578,
+        77.2302
+      ],
+      [
+        28.6431,
+        77.2223
+      ],
+      [
+        28.6328,
+        77.2195
+      ],
+      [
+        28.6231,
+        77.214
+      ],
+      [
+        28.6146,
+        77.2119
+      ],
+      [
+        28.5684,
+        77.2078
+      ],
+      [
+        28.5432,
+        77.2065
+      ],
+      [
+        28.5204,
+        77.2016
+      ],
+      [
+        28.5135,
+        77.1858
+      ],
+      [
+        28.4819,
+        77.0927
+      ],
+      [
+        28.48,
+        77.0805
+      ],
+      [
+        28.4593,
+        77.0726
+      ]
+    ],
+    "total_passengers": 10302626,
+    "daily_avg_passengers": 735902,
+    "avg_delay_min": 3.15
+  },
+  {
+    "route_id": "RT_DEL_BLUE",
+    "route_name": "Blue Line (Line 3/4)",
+    "line_code": "BLUE",
+    "color_hex": "#2F5D50",
+    "origin": "Dwarka Sector 21",
+    "destination": "Noida Electronic City",
+    "length_km": 56.6,
+    "total_stations": 12,
+    "scheduled_headway_min": 3.5,
+    "station_sequence": [
+      "ST_DEL_DWK_18",
+      "ST_DEL_DWM_19",
+      "ST_DEL_JAN_20",
+      "ST_DEL_RAJ_21",
+      "ST_DEL_KAR_22",
+      "ST_DEL_RAJ_08",
+      "ST_DEL_MAN_23",
+      "ST_DEL_AKS_24",
+      "ST_DEL_MAY_25",
+      "ST_DEL_NOI_26",
+      "ST_DEL_BOT_27",
+      "ST_DEL_NOE_28"
+    ],
+    "coordinates_path": [
+      [
+        28.5523,
+        77.0583
+      ],
+      [
+        28.6193,
+        77.0332
+      ],
+      [
+        28.6294,
+        77.0778
+      ],
+      [
+        28.6489,
+        77.1215
+      ],
+      [
+        28.6442,
+        77.1904
+      ],
+      [
+        28.6328,
+        77.2195
+      ],
+      [
+        28.6258,
+        77.2343
+      ],
+      [
+        28.6179,
+        77.2795
+      ],
+      [
+        28.6047,
+        77.2952
+      ],
+      [
+        28.5708,
+        77.3219
+      ],
+      [
+        28.5641,
+        77.3343
+      ],
+      [
+        28.6276,
+        77.3725
+      ]
+    ],
+    "total_passengers": 6807784,
+    "daily_avg_passengers": 486270,
+    "avg_delay_min": 2.96
+  },
+  {
+    "route_id": "RT_DEL_RED",
+    "route_name": "Red Line (Line 1)",
+    "line_code": "RED",
+    "color_hex": "#B94A3A",
+    "origin": "Rithala",
+    "destination": "Shaheed Sthal Ghaziabad",
+    "length_km": 34.4,
+    "total_stations": 8,
+    "scheduled_headway_min": 4.0,
+    "station_sequence": [
+      "ST_DEL_RIT_29",
+      "ST_DEL_NSP_30",
+      "ST_DEL_IND_31",
+      "ST_DEL_TIS_32",
+      "ST_DEL_KAS_05",
+      "ST_DEL_SHA_33",
+      "ST_DEL_DIL_34",
+      "ST_DEL_SSG_35"
+    ],
+    "coordinates_path": [
+      [
+        28.7207,
+        77.1071
+      ],
+      [
+        28.6953,
+        77.1524
+      ],
+      [
+        28.6732,
+        77.1698
+      ],
+      [
+        28.6672,
+        77.2163
+      ],
+      [
+        28.6675,
+        77.2285
+      ],
+      [
+        28.6735,
+        77.2872
+      ],
+      [
+        28.6759,
+        77.3215
+      ],
+      [
+        28.6711,
+        77.4124
+      ]
+    ],
+    "total_passengers": 3036185,
+    "daily_avg_passengers": 216870,
+    "avg_delay_min": 2.46
+  },
+  {
+    "route_id": "RT_DEL_VIOLET",
+    "route_name": "Violet Line (Line 6)",
+    "line_code": "VIOLET",
+    "color_hex": "#7A5C6E",
+    "origin": "Kashmere Gate",
+    "destination": "Badarpur Border",
+    "length_km": 46.6,
+    "total_stations": 10,
+    "scheduled_headway_min": 4.5,
+    "station_sequence": [
+      "ST_DEL_KAS_05",
+      "ST_DEL_LAQ_36",
+      "ST_DEL_DEL_37",
+      "ST_DEL_ITO_38",
+      "ST_DEL_MAN_23",
+      "ST_DEL_SEC_10",
+      "ST_DEL_KHA_39",
+      "ST_DEL_LAJ_40",
+      "ST_DEL_KAL_41",
+      "ST_DEL_BAD_42"
+    ],
+    "coordinates_path": [
+      [
+        28.6675,
+        77.2285
+      ],
+      [
+        28.656,
+        77.241
+      ],
+      [
+        28.6406,
+        77.2405
+      ],
+      [
+        28.6292,
+        77.2412
+      ],
+      [
+        28.6258,
+        77.2343
+      ],
+      [
+        28.6146,
+        77.2119
+      ],
+      [
+        28.6003,
+        77.2272
+      ],
+      [
+        28.5706,
+        77.2374
+      ],
+      [
+        28.5501,
+        77.2514
+      ],
+      [
+        28.4947,
+        77.3005
+      ]
+    ],
+    "total_passengers": 3696955,
+    "daily_avg_passengers": 264068,
+    "avg_delay_min": 2.44
+  },
+  {
+    "route_id": "RT_DEL_AIRPORT",
+    "route_name": "Airport Express Line",
+    "line_code": "ORANGE",
+    "color_hex": "#C96F4A",
+    "origin": "New Delhi Railway",
+    "destination": "Yashobhoomi Dwarka Sec 25",
+    "length_km": 24.9,
+    "total_stations": 6,
+    "scheduled_headway_min": 8.0,
+    "station_sequence": [
+      "ST_DEL_NDL_07",
+      "ST_DEL_SHI_43",
+      "ST_DEL_DHA_44",
+      "ST_DEL_AER_45",
+      "ST_DEL_IGI_46",
+      "ST_DEL_YAS_47"
+    ],
+    "coordinates_path": [
+      [
+        28.6431,
+        77.2223
+      ],
+      [
+        28.6295,
+        77.213
+      ],
+      [
+        28.5925,
+        77.161
+      ],
+      [
+        28.5492,
+        77.1215
+      ],
+      [
+        28.5562,
+        77.0864
+      ],
+      [
+        28.545,
+        77.042
+      ]
+    ],
+    "total_passengers": 2114868,
+    "daily_avg_passengers": 151062,
+    "avg_delay_min": 2.44
+  }
+]
