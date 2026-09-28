@@ -5,10 +5,17 @@ Descriptive Statistics, Distributions, Correlation Matrix, and Hypothesis Testin
 across supported Indian transit networks.
 """
 
+import math
 from typing import Dict, Any, List, Optional
 import pandas as pd
 import numpy as np
-from scipy import stats
+
+try:
+    from scipy import stats
+    HAS_SCIPY = True
+except Exception:
+    HAS_SCIPY = False
+
 from app.data_store import store
 
 
@@ -171,7 +178,13 @@ class StatsService:
         std_weekday = float(weekday_sample.std())
         std_weekend = float(weekend_sample.std())
 
-        t_stat, p_value = stats.ttest_ind(weekday_sample, weekend_sample, equal_var=False)
+        if HAS_SCIPY:
+            t_stat, p_value = stats.ttest_ind(weekday_sample, weekend_sample, equal_var=False)
+        else:
+            se_diff = np.sqrt((std_weekday ** 2) / n_weekday + (std_weekend ** 2) / n_weekend)
+            t_stat = (mean_weekday - mean_weekend) / se_diff if se_diff > 0 else 0.0
+            z = abs(float(t_stat))
+            p_value = float(2.0 * (1.0 - 0.5 * (1.0 + math.erf(z / math.sqrt(2.0)))))
 
         pooled_std = np.sqrt(((n_weekday - 1) * (std_weekday ** 2) + (n_weekend - 1) * (std_weekend ** 2)) / (n_weekday + n_weekend - 2))
         cohens_d = (mean_weekday - mean_weekend) / pooled_std if pooled_std > 0 else 0.0

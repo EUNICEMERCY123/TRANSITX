@@ -18,6 +18,13 @@ import {
   fetchNetworkSnapshot
 } from './services/api';
 import { Route, Station, SystemSummary, NetworkSnapshot, TransitNetwork } from './types/transit';
+import {
+  FALLBACK_NETWORKS,
+  FALLBACK_SUMMARIES,
+  FALLBACK_CHENNAI_ROUTES,
+  FALLBACK_CHENNAI_STATIONS,
+  getFallbackSnapshot
+} from './data/fallbackData';
 
 export const App: React.FC = () => {
   const [currentTab, setCurrentTab] = useState<NavItemKey>(() => {
@@ -40,8 +47,8 @@ export const App: React.FC = () => {
     return null;
   });
 
-  // Multi-Network State
-  const [networks, setNetworks] = useState<TransitNetwork[]>([]);
+  // Multi-Network State (initialized with verified registry)
+  const [networks, setNetworks] = useState<TransitNetwork[]>(FALLBACK_NETWORKS);
   const [selectedNetworkId, setSelectedNetworkId] = useState<string>(() => {
     if (typeof window !== 'undefined') {
       const net = new URLSearchParams(window.location.search).get('network');
@@ -50,12 +57,12 @@ export const App: React.FC = () => {
     return 'chennai';
   });
 
-  // Core Data States
-  const [summary, setSummary] = useState<SystemSummary | null>(null);
-  const [routes, setRoutes] = useState<Route[]>([]);
-  const [stations, setStations] = useState<Station[]>([]);
-  const [snapshot, setSnapshot] = useState<NetworkSnapshot | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  // Core Data States (hydrated with real baseline data to guarantee immediate 3D visualization)
+  const [summary, setSummary] = useState<SystemSummary | null>(() => FALLBACK_SUMMARIES['chennai'] || null);
+  const [routes, setRoutes] = useState<Route[]>(FALLBACK_CHENNAI_ROUTES);
+  const [stations, setStations] = useState<Station[]>(FALLBACK_CHENNAI_STATIONS);
+  const [snapshot, setSnapshot] = useState<NetworkSnapshot | null>(() => getFallbackSnapshot('chennai', '2024-01-15', 9));
+  const [loading, setLoading] = useState<boolean>(false);
 
   // Load available transit networks on mount
   useEffect(() => {

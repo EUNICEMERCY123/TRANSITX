@@ -11,8 +11,26 @@ import pandas as pd
 import numpy as np
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(os.path.dirname(CURRENT_DIR))
-DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+
+# Discover data directory across local, Docker, and serverless environments
+possible_roots = [
+    os.environ.get("TRANSITX_DATA_DIR"),
+    os.path.join(os.path.dirname(os.path.dirname(CURRENT_DIR)), "data"),
+    os.path.join(os.path.dirname(CURRENT_DIR), "data"),
+    os.path.join(os.getcwd(), "data"),
+    os.path.join(os.getcwd(), "..", "data"),
+    os.path.join(CURRENT_DIR, "data"),
+]
+
+DATA_DIR = None
+for p in possible_roots:
+    if p and os.path.isdir(p) and (os.path.exists(os.path.join(p, "networks")) or os.path.exists(os.path.join(p, "processed"))):
+        DATA_DIR = p
+        break
+
+if not DATA_DIR:
+    DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(CURRENT_DIR)), "data")
+
 NETWORKS_DIR = os.path.join(DATA_DIR, "networks")
 PROCESSED_DEFAULT_DIR = os.path.join(DATA_DIR, "processed")
 
