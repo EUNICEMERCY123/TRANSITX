@@ -12,7 +12,11 @@ import {
   Users,
   Building,
   TrendingUp,
-  MapPin
+  MapPin,
+  Info,
+  ChevronDown,
+  ChevronUp,
+  CheckCircle2
 } from 'lucide-react';
 import { Station, StationDetail } from '../types/transit';
 import { fetchStationDetails } from '../services/api';
@@ -35,6 +39,7 @@ export const StationsPage: React.FC<StationsPageProps> = ({
   const [stationDetail, setStationDetail] = useState<StationDetail | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [searchFilter, setSearchFilter] = useState<string>('');
+  const [showMethod, setShowMethod] = useState<boolean>(false);
 
   useEffect(() => {
     if (initialStationId) {
@@ -84,22 +89,49 @@ export const StationsPage: React.FC<StationsPageProps> = ({
             Station Analysis
           </div>
           <h1 className="text-2xl font-black text-[#242521] tracking-tight mt-1">
-            Where are people gathering?
+            Where is the city busiest?
           </h1>
           <p className="text-xs text-[#6E6E67] mt-0.5">
-            Ranked view of the busiest transit hubs across the city network.
+            Ranked view of the busiest transit hubs and passenger volumes across the network.
           </p>
         </div>
 
-        {/* Quick Search */}
-        <input
-          type="text"
-          placeholder="Search station or zone..."
-          value={searchFilter}
-          onChange={(e) => setSearchFilter(e.target.value)}
-          className="px-3.5 py-2 bg-[#FFFFFF] border border-[#DDD9CF] rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-[#D89B32] w-56 shadow-xs text-[#242521]"
-        />
+        <div className="flex items-center space-x-3">
+          {/* How was this found? Toggle */}
+          <button
+            onClick={() => setShowMethod(!showMethod)}
+            className="flex items-center space-x-1.5 px-3 py-2 rounded-xl border border-[#DDD9CF] bg-[#FFFFFF] hover:bg-[#F7F5EF] text-xs font-semibold text-[#242521] transition-all cursor-pointer shadow-xs shrink-0"
+          >
+            <Info className="w-3.5 h-3.5 text-[#D89B32]" />
+            <span>{showMethod ? 'Hide Explanation' : 'How was this found?'}</span>
+            {showMethod ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+          </button>
+
+          {/* Quick Search */}
+          <input
+            type="text"
+            placeholder="Search station or zone..."
+            value={searchFilter}
+            onChange={(e) => setSearchFilter(e.target.value)}
+            className="px-3.5 py-2 bg-[#FFFFFF] border border-[#DDD9CF] rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-[#D89B32] w-56 shadow-xs text-[#242521]"
+          />
+        </div>
       </div>
+
+      {/* Expandable DSE Method Explanation */}
+      {showMethod && (
+        <div className="p-4 bg-[#FFF8EB] rounded-2xl border border-[#FDE4B4] text-xs text-[#242521] space-y-1.5 animate-in fade-in duration-200">
+          <div className="font-bold flex items-center gap-1.5 text-[#A86F18]">
+            <CheckCircle2 className="w-4 h-4 text-[#D89B32]" />
+            <span>Data Science Method: Exploratory Data Analysis & Empirical Grouping</span>
+          </div>
+          <p className="leading-relaxed text-[11px] text-[#7D5514]">
+            <strong>Data used:</strong> 14,364 hourly passenger records across 47 stations over a 14-day observation window.<br />
+            <strong>Method:</strong> We aggregated hourly boardings by station to compute the empirical mean, peak percentile surge, and schedule delay averages.<br />
+            <strong>Why it matters:</strong> Identifies which critical interchanges require augmented frequency and crowd-management marshals.
+          </p>
+        </div>
+      )}
 
       {/* Main Grid: Left Ranked Stations List + Right Station Deep Dive */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start">

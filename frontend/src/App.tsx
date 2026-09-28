@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Sidebar, NavItemKey } from './components/layout/Sidebar';
-import { Header } from './components/layout/Header';
-import { OverviewPage } from './pages/OverviewPage';
+import { TopNavbar, TabKey } from './components/layout/TopNavbar';
+import { LandingPage } from './pages/LandingPage';
 import { NetworkPage } from './pages/NetworkPage';
 import { StationsPage } from './pages/StationsPage';
 import { RoutesPage } from './pages/RoutesPage';
@@ -27,25 +26,29 @@ import {
 } from './data/fallbackData';
 
 export const App: React.FC = () => {
-  const [currentTab, setCurrentTab] = useState<NavItemKey>(() => {
+  // Navigation & View Mode: 'landing' or 'app'
+  const [viewMode, setViewMode] = useState<'landing' | 'app'>(() => {
     if (typeof window !== 'undefined') {
-      const hash = window.location.hash.replace('#', '') as NavItemKey;
-      const validTabs: NavItemKey[] = ['overview', 'network', 'stations', 'routes', 'demand', 'delays', 'insights', 'data', 'about'];
-      if (validTabs.includes(hash)) return hash;
-      const param = new URLSearchParams(window.location.search).get('tab') as NavItemKey;
-      if (param && validTabs.includes(param)) return param;
+      const hash = window.location.hash.replace('#', '');
+      const validAppTabs = ['network', 'stations', 'routes', 'demand', 'delays', 'insights', 'data', 'about'];
+      if (validAppTabs.includes(hash)) return 'app';
     }
-    return 'overview';
+    return 'landing';
   });
+
+  const [currentTab, setCurrentTab] = useState<TabKey>(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash.replace('#', '') as TabKey;
+      const validTabs: TabKey[] = ['network', 'stations', 'routes', 'demand', 'delays', 'insights', 'data', 'about'];
+      if (validTabs.includes(hash)) return hash;
+    }
+    return 'network';
+  });
+
   const [currentSubTab, setCurrentSubTab] = useState<string | undefined>(undefined);
   const [selectedDate, setSelectedDate] = useState<string>('2024-01-15');
   const [selectedHour, setSelectedHour] = useState<number>(9);
-  const [selectedStationId, setSelectedStationId] = useState<string | null>(() => {
-    if (typeof window !== 'undefined') {
-      return new URLSearchParams(window.location.search).get('station');
-    }
-    return null;
-  });
+  const [selectedStationId, setSelectedStationId] = useState<string | null>(null);
 
   // Multi-Network State (initialized with verified registry)
   const [networks, setNetworks] = useState<TransitNetwork[]>(FALLBACK_NETWORKS);
@@ -57,7 +60,7 @@ export const App: React.FC = () => {
     return 'chennai';
   });
 
-  // Core Data States (hydrated with real baseline data to guarantee immediate 3D visualization)
+  // Core Data States (hydrated with real baseline data to guarantee immediate visualization)
   const [summary, setSummary] = useState<SystemSummary | null>(() => FALLBACK_SUMMARIES['chennai'] || null);
   const [routes, setRoutes] = useState<Route[]>(FALLBACK_CHENNAI_ROUTES);
   const [stations, setStations] = useState<Station[]>(FALLBACK_CHENNAI_STATIONS);
@@ -119,33 +122,54 @@ export const App: React.FC = () => {
   const handleViewStationInsights = (stationId: string) => {
     setSelectedStationId(stationId);
     setCurrentTab('stations');
+    if (typeof window !== 'undefined') window.location.hash = 'stations';
   };
 
-  const handleNavigate = (tab: NavItemKey, subTab?: string) => {
+  const handleNavigateToTab = (tab: TabKey, subTab?: string) => {
+    setViewMode('app');
     setCurrentTab(tab);
     setCurrentSubTab(subTab);
+    if (typeof window !== 'undefined') window.location.hash = tab;
+  };
+
+  const handleExploreNetwork = () => {
+    setViewMode('app');
+    setCurrentTab('network');
+    setCurrentSubTab(undefined);
+    if (typeof window !== 'undefined') window.location.hash = 'network';
+  };
+
+  const handleReturnToHome = () => {
+    setViewMode('landing');
+    if (typeof window !== 'undefined') window.location.hash = '';
   };
 
   const currentNetwork = networks.find((n) => n.id === selectedNetworkId) || null;
+  const currentStations = snapshot ? snapshot.stations : stations;
+  const currentRoutes = snapshot ? snapshot.routes : routes;
 
-  const renderContent = () => {
-    const currentStations = snapshot ? snapshot.stations : stations;
-    const currentRoutes = snapshot ? snapshot.routes : routes;
+  // Render the Hero Landing Page
+  if (viewMode === 'landing') {
+    return (
+      <LandingPage
+        summary={summary}
+        routes={currentRoutes}
+        stations={currentStations}
+        availableNetworks={networks}
+        selectedNetworkId={selectedNetworkId}
+        onSelectNetwork={(id) => {
+          setSelectedNetworkId(id);
+          setSelectedStationId(null);
+        }}
+        onExploreNetwork={handleExploreNetwork}
+        onNavigateToTab={handleNavigateToTab}
+      />
+    );
+  }
 
+  // Render Main Application
+  const renderAppContent = () => {
     switch (currentTab) {
-      case 'overview':
-        return (
-          <OverviewPage
-            summary={summary}
-            onNavigate={(tab, subTab) => handleNavigate(tab, subTab)}
-            availableNetworks={networks}
-            selectedNetworkId={selectedNetworkId}
-            onSelectNetwork={(id) => {
-              setSelectedNetworkId(id);
-              setSelectedStationId(null);
-            }}
-          />
-        );
       case 'network':
         return (
           <NetworkPage
@@ -208,60 +232,47 @@ export const App: React.FC = () => {
         return <AboutPage />;
       default:
         return (
-          <OverviewPage
-            summary={summary}
-            onNavigate={(tab, subTab) => handleNavigate(tab, subTab)}
-            availableNetworks={networks}
-            selectedNetworkId={selectedNetworkId}
-            onSelectNetwork={(id) => {
-              setSelectedNetworkId(id);
-              setSelectedStationId(null);
-            }}
+          <NetworkPage
+            routes={currentRoutes}
+            stations={currentStations}
+            selectedHour={selectedHour}
+            onHourChange={(h) => setSelectedHour(h)}
+            selectedStationId={selectedStationId}
+            onSelectStation={(sid) => setSelectedStationId(sid)}
+            onViewStationInsights={handleViewStationInsights}
+            currentNetwork={currentNetwork}
           />
         );
     }
   };
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden bg-[#F7F5EF] text-[#242521] font-sans">
-      {/* Sidebar Navigation */}
-      <Sidebar
+    <div className="flex flex-col h-screen w-screen overflow-hidden bg-[#F7F5EF] text-[#242521] font-sans">
+      {/* Sleek Top Navigation Bar (replaces the vertical sidebar) */}
+      <TopNavbar
         currentTab={currentTab}
-        onSelectTab={(tab) => {
-          setCurrentTab(tab);
-          setCurrentSubTab(undefined);
-          if (typeof window !== 'undefined') window.location.hash = tab;
+        onSelectTab={(tab, subTab) => handleNavigateToTab(tab, subTab)}
+        onReturnToHome={handleReturnToHome}
+        currentDate={selectedDate}
+        currentHour={selectedHour}
+        activeLineCount={routes.length}
+        totalRecords={selectedNetworkId === 'delhi' ? 14098 : 14364}
+        availableNetworks={networks}
+        selectedNetworkId={selectedNetworkId}
+        onSelectNetwork={(id) => {
+          setSelectedNetworkId(id);
+          setSelectedStationId(null);
         }}
-        systemSummary={summary}
-        currentNetwork={currentNetwork}
       />
 
-      {/* Main Workspace Area */}
-      <div className="flex-1 flex flex-col min-w-0 h-screen overflow-hidden">
-        {/* Top Header */}
-        <Header
-          currentDate={selectedDate}
-          currentHour={selectedHour}
-          onHourChange={(h) => setSelectedHour(h)}
-          activeLineCount={routes.length}
-          totalRecords={summary ? summary.total_ridership : 12805692}
-          availableNetworks={networks}
-          selectedNetworkId={selectedNetworkId}
-          onSelectNetwork={(id) => {
-            setSelectedNetworkId(id);
-            setSelectedStationId(null);
-          }}
-        />
-
-        {/* Scrollable page body (or fixed for map) */}
-        <main
-          className={`flex-1 ${
-            currentTab === 'network' ? 'overflow-hidden flex flex-col' : 'overflow-y-auto'
-          }`}
-        >
-          {renderContent()}
-        </main>
-      </div>
+      {/* Main Content Workspace — Full Horizontal Space */}
+      <main
+        className={`flex-1 min-w-0 ${
+          currentTab === 'network' ? 'overflow-hidden flex flex-col' : 'overflow-y-auto'
+        }`}
+      >
+        {renderAppContent()}
+      </main>
     </div>
   );
 };

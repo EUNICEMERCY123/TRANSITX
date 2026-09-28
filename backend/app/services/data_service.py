@@ -477,10 +477,12 @@ class DataService:
         if date and date != "ALL":
             filtered = filtered[filtered["date"] == date]
         if search:
-            s = search.lower()
+            s = search.lower().strip()
             filtered = filtered[
                 filtered["station_name"].str.lower().str.contains(s, na=False) |
-                filtered["route_name"].str.lower().str.contains(s, na=False)
+                filtered["route_name"].str.lower().str.contains(s, na=False) |
+                filtered["record_id"].str.lower().str.contains(s, na=False) |
+                filtered["route_id"].str.lower().str.contains(s, na=False)
             ]
 
         total_rows = len(filtered)

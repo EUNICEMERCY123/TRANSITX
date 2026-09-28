@@ -11,7 +11,11 @@ import {
 } from 'recharts';
 import {
   Clock,
-  TrendingUp
+  TrendingUp,
+  Info,
+  ChevronDown,
+  ChevronUp,
+  CheckCircle2
 } from 'lucide-react';
 import { Route, Station, DemandAnalysis } from '../types/transit';
 import { fetchDemandAnalysis } from '../services/api';
@@ -33,15 +37,21 @@ export const DemandPage: React.FC<DemandPageProps> = ({
   const [selectedDate, setSelectedDate] = useState<string>('2024-01-15');
   const [demandData, setDemandData] = useState<DemandAnalysis | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [showMethod, setShowMethod] = useState<boolean>(false);
+
+  useEffect(() => {
+    setSelectedRoute('ALL');
+    setSelectedStation('ALL');
+  }, [networkId]);
 
   useEffect(() => {
     let isMounted = true;
     setLoading(true);
     fetchDemandAnalysis(
+      networkId || 'chennai',
       selectedRoute === 'ALL' ? undefined : selectedRoute,
       selectedStation === 'ALL' ? undefined : selectedStation,
-      selectedDate === 'ALL' ? undefined : selectedDate,
-      networkId
+      selectedDate === 'ALL' ? undefined : selectedDate
     )
       .then((data) => {
         if (isMounted) {
@@ -119,8 +129,33 @@ export const DemandPage: React.FC<DemandPageProps> = ({
             <option value="2024-01-21">Sun, 21 Jan 2024</option>
             <option value="ALL">14-Day Average</option>
           </select>
+
+          {/* How was this found? Toggle */}
+          <button
+            onClick={() => setShowMethod(!showMethod)}
+            className="flex items-center space-x-1.5 px-3 py-2 rounded-xl border border-[#DDD9CF] bg-[#FFFFFF] hover:bg-[#F7F5EF] text-xs font-semibold text-[#242521] transition-all cursor-pointer shadow-xs shrink-0"
+          >
+            <Info className="w-3.5 h-3.5 text-[#D89B32]" />
+            <span>{showMethod ? 'Hide Explanation' : 'How was this found?'}</span>
+            {showMethod ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+          </button>
         </div>
       </div>
+
+      {/* Expandable DSE Method Explanation */}
+      {showMethod && (
+        <div className="p-4 bg-[#FFF8EB] rounded-2xl border border-[#FDE4B4] text-xs text-[#242521] space-y-1.5 animate-in fade-in duration-200">
+          <div className="font-bold flex items-center gap-1.5 text-[#A86F18]">
+            <CheckCircle2 className="w-4 h-4 text-[#D89B32]" />
+            <span>Data Science Method: Diurnal Time-Series Aggregation & Peak Identification</span>
+          </div>
+          <p className="leading-relaxed text-[11px] text-[#7D5514]">
+            <strong>Data used:</strong> Hourly passenger observations spanning operating hours (05:00 to 23:00) over 14 days.<br />
+            <strong>Method:</strong> Aggregated boardings by clock hour across selected routes and stations to compute diurnal trends and percentage deviation above typical daily averages.<br />
+            <strong>Why it matters:</strong> Helps schedule planners determine exact train frequency ramp-up windows for morning (08:30–09:30) and evening (17:30–19:00) rush hours.
+          </p>
+        </div>
+      )}
 
       {loading ? (
         <div className="h-96 flex flex-col items-center justify-center space-y-3 bg-[#FFFFFF] rounded-3xl border border-[#DDD9CF]">
@@ -284,7 +319,12 @@ export const DemandPage: React.FC<DemandPageProps> = ({
             </div>
           </div>
         </>
-      ) : null}
+      ) : (
+        <div className="p-12 text-center bg-[#FFFFFF] rounded-3xl border border-[#DDD9CF] space-y-2">
+          <p className="text-sm font-bold text-[#242521]">No demand data found for the selected combination</p>
+          <p className="text-xs text-[#6E6E67]">Try selecting "All Routes" or "All Stations" to view the network-wide passenger pattern.</p>
+        </div>
+      )}
     </div>
   );
 };

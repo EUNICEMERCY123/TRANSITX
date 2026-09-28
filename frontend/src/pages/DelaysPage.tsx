@@ -11,7 +11,11 @@ import {
 import {
   Clock,
   AlertTriangle,
-  ShieldCheck
+  ShieldCheck,
+  Info,
+  ChevronDown,
+  ChevronUp,
+  CheckCircle2
 } from 'lucide-react';
 import { DelaysAnalysis } from '../types/transit';
 import { fetchDelaysAnalysis } from '../services/api';
@@ -24,6 +28,7 @@ interface DelaysPageProps {
 export const DelaysPage: React.FC<DelaysPageProps> = ({ networkId }) => {
   const [delaysData, setDelaysData] = useState<DelaysAnalysis | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
+  const [showMethod, setShowMethod] = useState<boolean>(false);
 
   useEffect(() => {
     let isMounted = true;
@@ -47,17 +52,44 @@ export const DelaysPage: React.FC<DelaysPageProps> = ({ networkId }) => {
   return (
     <div className="p-8 max-w-7xl mx-auto space-y-8 animate-in fade-in duration-300">
       {/* Top Header */}
-      <div className="pb-4 border-b border-[#DDD9CF]">
-        <div className="text-xs font-bold text-[#D89B32] uppercase tracking-wider">
-          Schedule Reliability
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#DDD9CF]">
+        <div>
+          <div className="text-xs font-bold text-[#D89B32] uppercase tracking-wider">
+            Schedule Reliability
+          </div>
+          <h1 className="text-2xl font-black text-[#242521] tracking-tight mt-1">
+            Where do delays happen?
+          </h1>
+          <p className="text-xs text-[#6E6E67] mt-0.5">
+            Evaluate waiting times, bottlenecks, and on-time performance across transit lines.
+          </p>
         </div>
-        <h1 className="text-2xl font-black text-[#242521] tracking-tight mt-1">
-          Where are schedule delays occurring?
-        </h1>
-        <p className="text-xs text-[#6E6E67] mt-0.5">
-          Evaluate waiting times, bottlenecks, and on-time performance across transit lines.
-        </p>
+
+        {/* How was this found? Toggle */}
+        <button
+          onClick={() => setShowMethod(!showMethod)}
+          className="flex items-center space-x-1.5 px-3 py-2 rounded-xl border border-[#DDD9CF] bg-[#FFFFFF] hover:bg-[#F7F5EF] text-xs font-semibold text-[#242521] transition-all cursor-pointer shadow-xs shrink-0 self-start sm:self-auto"
+        >
+          <Info className="w-3.5 h-3.5 text-[#D89B32]" />
+          <span>{showMethod ? 'Hide Explanation' : 'How was this found?'}</span>
+          {showMethod ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+        </button>
       </div>
+
+      {/* Expandable DSE Method Explanation */}
+      {showMethod && (
+        <div className="p-4 bg-[#FFF8EB] rounded-2xl border border-[#FDE4B4] text-xs text-[#242521] space-y-1.5 animate-in fade-in duration-200">
+          <div className="font-bold flex items-center gap-1.5 text-[#A86F18]">
+            <CheckCircle2 className="w-4 h-4 text-[#D89B32]" />
+            <span>Data Science Method: Schedule Adherence Distribution & Bottleneck Ranking</span>
+          </div>
+          <p className="leading-relaxed text-[11px] text-[#7D5514]">
+            <strong>Data used:</strong> Headway observation logs across all 5 corridors.<br />
+            <strong>Method:</strong> Schedule deviation was evaluated against timetable targets. Typical delays represent median waiting time, while 95th-percentile spikes isolate acute bottlenecks.<br />
+            <strong>Why it matters:</strong> Pinpoints specific track segments (e.g., terminal switching points and high-density interchanges) that cause cascading ripple delays.
+          </p>
+        </div>
+      )}
 
       {loading ? (
         <div className="h-96 flex flex-col items-center justify-center space-y-3 bg-[#FFFFFF] rounded-3xl border border-[#DDD9CF]">
@@ -239,7 +271,12 @@ export const DelaysPage: React.FC<DelaysPageProps> = ({ networkId }) => {
             </div>
           </div>
         </>
-      ) : null}
+      ) : (
+        <div className="p-12 text-center bg-[#FFFFFF] rounded-3xl border border-[#DDD9CF] space-y-2">
+          <p className="text-sm font-bold text-[#242521]">No delay records available</p>
+          <p className="text-xs text-[#6E6E67]">Waiting times and schedule adherence will appear as telemetry is processed.</p>
+        </div>
+      )}
     </div>
   );
 };
